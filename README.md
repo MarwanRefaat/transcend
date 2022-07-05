@@ -49,3 +49,5 @@ For example, the following lyrics from wonderwall generated these potential cove
 > I don't believe that anybody feels the way I do about you now
 ![Marwan_And_backbeat_the_word_is_on_the_street_that_the_fire_in__bc685f53-9019-484c-9170-901ee0f7ae6e-1](https://user-images.githubusercontent.com/24831146/177431714-88ea3cb1-fe88-4695-acf5-abf79dd2a47d.png)
 
+# WebHooks to Deploy Alpha Songs
+Superfans can have access to the song creation process and get to listen to the music being built one commit at a time. Imagine hearing a "timelapse" of your favorite artists album as it is being made and potentially even having the opportunity to "vote" or test out parts of the album. The culture behind be a part of a pilot for software is exciting and the potential for music to have the same should be a thing. Getting to a hear v0.1.0 of your favorite artists single could be very cool and controversy on which version is best could add an interesting vector of conversation to the mix.
