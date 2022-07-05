@@ -16,3 +16,6 @@ iF YOUR house doesn't look like this please leave![Google Chrome Screenshot on 0
 Evolution of multimedia goes from text to sound to image and then it's combined magically into movies/musical theater
 
 Seems wise to start with music and as momentum builds incorporate more mediums meaningfully. Art is art, maximum generation is good though constraints need to be built such that energy isn't spread to thin. Can this be defined productively?
+
+# Why GitHub
+GitHub is where the worlds most influential products are built, soon it will be where the worlds most powerful productions are created. Imagine if creative people across the world could contribute piecemeal to an academy award caliber production. Open source has had some mind-boggling effects on the information sphere and the creative space is next. Aligning creative visions is a major challenge and the iteration process for creativity is particularly challenging. Using a version control system like git in combination with performing art is unconventional but could unlock a lot.
