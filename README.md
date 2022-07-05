@@ -39,3 +39,13 @@ curl https://api.openai.com/v1/completions \
   "presence_penalty": 0
 }'
 ```
+
+## DALL-E Generated Album Covers
+Given some lyrics from a song an album/single cover can be generated such that music can be released with minimal investment in accessory artwork until it’s proven to have some traction after which the art may be revised.
+
+For example, the following lyrics from wonderwall generated these potential covers:
+> And backbeat, the word is on the street that the fire in your heart is out
+> I'm sure you've heard it all before, but you never really had a doubt
+> I don't believe that anybody feels the way I do about you now
+![Marwan_And_backbeat_the_word_is_on_the_street_that_the_fire_in__bc685f53-9019-484c-9170-901ee0f7ae6e-1](https://user-images.githubusercontent.com/24831146/177431714-88ea3cb1-fe88-4695-acf5-abf79dd2a47d.png)
+
