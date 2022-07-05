@@ -19,3 +19,23 @@ Seems wise to start with music and as momentum builds incorporate more mediums m
 
 # Why GitHub
 GitHub is where the worlds most influential products are built, soon it will be where the worlds most powerful productions are created. Imagine if creative people across the world could contribute piecemeal to an academy award caliber production. Open source has had some mind-boggling effects on the information sphere and the creative space is next. Aligning creative visions is a major challenge and the iteration process for creativity is particularly challenging. Using a version control system like git in combination with performing art is unconventional but could unlock a lot.
+
+# ArtOps
+
+DevOps and CI/CD really helps streamline the engineering process, imagine the same type of tooling and chained looping processes applied to the creative process. Automated A/B testing of lyrics run on music and computer vision algorithms trained to pre-identify which footage is likely to perform better that is then improved with real-world data based on deep analytics. The marginal return of some engineering to art could be tremendously high. GitHub actions is a great place to start with this, one idea of a small automation could be a GPT-3 fine tuned model that classifies which of two verses it thinks is better.
+
+For example:
+```
+curl https://api.openai.com/v1/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+  "model": "text-davinci-002",
+  "prompt": "Predict whether verse 1 or verse 2 is likely to perform better:\n\nVerse 1:\nToday is gonna be the day that they're gonna throw it back to you\nAnd by now, you should've somehow realised what you gotta do\nI don't believe that anybody feels the way I do about you now\n\nVerse 2:\nToday was gonna be the day, but they'll never throw it back to you\nAnd by now, you should've somehow realised what you're not to do\nI don't believe that anybody feels the way I do about you now\n\nThe verse that will perform better is:",
+  "temperature": 0,
+  "max_tokens": 2048,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}'
+```
