@@ -81,3 +81,7 @@ The beauty of using GitHub is that everything can be reverted so if you have an 
 - [ ] Tie Readme in with Notion to make more easily editable
 - [ ] Build an automation with Dall-E (scope out idea)
 - [ ] Add some rap lyrics on one of Jonah's beats as an early experiment
+
+Completed to do list
+- [ ] 
+- [x] Init repo and start the movement
