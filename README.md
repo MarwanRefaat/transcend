@@ -68,6 +68,8 @@ In terms of business model the idea is to be a hybrid between a tech-company and
 
 ![roblox-earnings-distribution](https://user-images.githubusercontent.com/24831146/177463985-6faaa493-4a17-4dd5-b1b6-fb0338662b00.png)
 
+* Note that the example above is Roblox's model and is just an exemplar of a potential distribution but these aren't the numbers we're settled on
+
 An automated way to distribute royalties and earnings from performances to contributors in a manner that's pro-rated based on the contribution would incentivize people and would allow both generalists and specialists to benefit financially from their creations. this algorithm would ideally be automated and fine-tuned over time based on voting by the community and while unlikely to be perfect at first it could get better and fairer over time.
 
 # Ethos
