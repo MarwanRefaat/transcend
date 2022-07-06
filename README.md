@@ -77,6 +77,16 @@ Do-occracy: doing > debating
 
 The beauty of using GitHub is that everything can be reverted so if you have an idea, do it and ask for forgiveness later, the stakes are low here and things are highly reversible! "No buts" should be reduced to an absolute minimum (practically zero) and "yes ands" should be encouraged, we don't need people to kill bad ideas, people aren't good at that and the forces of nature tend to do so in due time anyways. Resistance should kill bad ideas not people.
 
+Composable, remixable, modular, shared building blocks, that are owned and properly rewarded but shared (shared distributed ownership, people need credit and ownership but it's not about monopolizing and restricted, open source and shared but without being volunteer work, work deserves compensation and ownership is cool but generally don't restrict future creation)
+
+![Marwan_Scenic_landscape_of_composable_building_blocks_of_creati_8028ec5f-21f3-4b91-a288-2d8f8e1565c3](https://user-images.githubusercontent.com/24831146/177654647-be6b3e6c-9ac8-47eb-aa71-ecbd43384787.png)
+
+
+"Scenic landscape of composable building blocks of creative ideas combined together by different people to create a shared piece of art that everyone owns a small piece of and is greater than the sum of its parts, cinematographic mood - @Marwan (Waiting to start...)"
+
+How do we make life more like minecraft? Composable, creative, open, sandbox, shared yet owned, built collaboratively with shared resources and a general collective sense of community without compromising the importance of ego, individualism, and power. People want to feel powerful and people want to build wealth but they also want to be a part of something greater and contribute the wealth they made to something greater. Ownership can only be distributed if it's granted to start with.
+
+
 # To-Do
 - [ ] Tie Readme in with Notion to make more easily editable
 - [ ] Build an automation with Dall-E (scope out idea)
