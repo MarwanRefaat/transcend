@@ -53,6 +53,7 @@ For example, the following lyrics from wonderwall generated these potential cove
 Superfans can have access to the song creation process and get to listen to the music being built one commit at a time. Imagine hearing a "timelapse" of your favorite artists album as it is being made and potentially even having the opportunity to "vote" or test out parts of the album. The culture behind be a part of a pilot for software is exciting and the potential for music to have the same should be a thing. Getting to a hear v0.1.0 of your favorite artists single could be very cool and controversy on which version is best could add an interesting vector of conversation to the mix.
 
 # File Structure
+![composable-design](https://user-images.githubusercontent.com/24831146/177462001-f9787da8-12ae-4768-9866-2812921a8a9a.png)
 The "Snippets" folder contains intial ideas for songs (lyrics, beats, riffs/melodies).
 The "Music" folder is for when you're building onto snippets or combinding multiple ideas.
 
