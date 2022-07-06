@@ -54,6 +54,7 @@ Superfans can have access to the song creation process and get to listen to the 
 
 # File Structure
 ![composable-design](https://user-images.githubusercontent.com/24831146/177462001-f9787da8-12ae-4768-9866-2812921a8a9a.png)
+
 The "Snippets" folder contains intial ideas for songs (lyrics, beats, riffs/melodies).
 The "Music" folder is for when you're building onto snippets or combinding multiple ideas.
 
