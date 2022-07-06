@@ -67,3 +67,8 @@ It would be remarkable if contributions made via URLs eventually made their way 
 ![roblox-earnings-distribution](https://user-images.githubusercontent.com/24831146/177463985-6faaa493-4a17-4dd5-b1b6-fb0338662b00.png)
 
 An automated way to distribute royalties and earnings from performances to contributors in a manner that's pro-rated based on the contribution would incentivize people and would allow both generalists and specialists to benefit financially from their creations. this algorithm would ideally be automated and fine-tuned over time based on voting by the community and while unlikely to be perfect at first it could get better and fairer over time.
+
+# Ethos
+Do-occracy: doing > debating
+
+The beauty of using GitHub is that everything can be reverted so if you have an idea, do it and ask for forgiveness later, the stakes are low here and things are highly reversible! "No buts" should be reduced to an absolute minimum (practically zero) and "yes ands" should be encouraged, we don't need people to kill bad ideas, people aren't good at that and the forces of nature tend to do so in due time anyways. Resistance should kill bad ideas not people.
