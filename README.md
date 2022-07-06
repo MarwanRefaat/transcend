@@ -58,6 +58,8 @@ Superfans can have access to the song creation process and get to listen to the 
 The "Snippets" folder contains intial ideas for songs (lyrics, beats, riffs/melodies).
 The "Music" folder is for when you're building onto snippets or combinding multiple ideas.
 
+The general idea here is to make things composable and atomic such that a bottoms-up approach can be taken to building art. If you're familiar with MineCraft and the "blocks" system then that is a perfect analogy here. The idea is for specialists to introduce blocks and generalists to piece the blocks together and then for the credit to be shared accross both.
+
 # Real-World Performances
 It would be remarkable if contributions made via URLs eventually made their way to IRL in the form of real-world concerts which would then be published to the GitHub and/or live-streamed. People contributing to the performance would get free perks and VIP access tickets as well as backstage passes etc.
 
