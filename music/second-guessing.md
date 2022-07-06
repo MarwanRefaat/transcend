@@ -1,5 +1,7 @@
 # Second Guessing
 
+CAPO ON 2
+
 G C D G 
 
 G C D Em 
