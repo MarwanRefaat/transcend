@@ -64,6 +64,8 @@ The general idea here is to make things composable and atomic such that a bottom
 It would be remarkable if contributions made via URLs eventually made their way to IRL in the form of real-world concerts which would then be published to the GitHub and/or live-streamed. People contributing to the performance would get free perks and VIP access tickets as well as backstage passes etc.
 
 # Earnings Distribution Algorithm
+In terms of business model the idea is to be a hybrid between a tech-company and a record label
+
 ![roblox-earnings-distribution](https://user-images.githubusercontent.com/24831146/177463985-6faaa493-4a17-4dd5-b1b6-fb0338662b00.png)
 
 An automated way to distribute royalties and earnings from performances to contributors in a manner that's pro-rated based on the contribution would incentivize people and would allow both generalists and specialists to benefit financially from their creations. this algorithm would ideally be automated and fine-tuned over time based on voting by the community and while unlikely to be perfect at first it could get better and fairer over time.
