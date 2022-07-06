@@ -76,3 +76,8 @@ An automated way to distribute royalties and earnings from performances to contr
 Do-occracy: doing > debating
 
 The beauty of using GitHub is that everything can be reverted so if you have an idea, do it and ask for forgiveness later, the stakes are low here and things are highly reversible! "No buts" should be reduced to an absolute minimum (practically zero) and "yes ands" should be encouraged, we don't need people to kill bad ideas, people aren't good at that and the forces of nature tend to do so in due time anyways. Resistance should kill bad ideas not people.
+
+# To-Do
+[] Tie Readme in with Notion to make more easily editable
+[] Build an automation with Dall-E (scope out idea)
+[] Add some rap lyrics on one of Jonah's beats as an early experiment
