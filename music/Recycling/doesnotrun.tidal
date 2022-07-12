@@ -1,0 +1,49 @@
+
+sock <- carabiner tidal 4 (-0.14)
+
+(<|) = (<<<)
+(|>) = (>>>)
+setcps (120/60/4)
+
+d1 $ n "0 2 4 7" # s "midi1"
+d2 $ n "0 2 4 7" # s "midi2"
+d1 $ note "0 2 4 7" # s "midi1" # midichan 1
+
+d1 $ note "0 2 4 7" # s "midi1" # midichan 0
+d2 $ note "0 2 4 7" # s "midi1" # midichan 1
+d2 $ note "0 2 4 7" # s "midi1" # midichan 1
+
+hush
+d1 $ n "0" # s "midi1" # midichan 1 # sustain "<0.125 0.25 0.5 1>"
+d1 $ n "0" # s "midi1" # midichan 1 # sustain 0.5
+
+d2 $ s "hh:2 ~ hh:3 cp"
+d1 $ s "bd ~ bd ~"
+d2 $ s "[~ hh]*2"
+
+d1 $ s "cp" # nudge 0.05
+
+once $ s "trump"
+
+d1 $ s "bd ~ bd ~"
+all $ (#nudge 0.3)
+hush
+
+d1 $ silence
+d2 $ silence
+
+d4 $ n (slow 2 $ fmap (*7) $ run 8) 
+  # s "supergong" 
+  # decay "[1 0.2]/4" 
+  # voice "[0.5 0]/8" 
+
+d1 $ s "bd [cp hh] hh cp"
+d1 $ s "hh ~ [hh hh] hh"
+d1 $ s "hh ~ [hh hh] hh"
+d1 $ s "hh ~ [hh hh] hh"
+
+d1 $ n (slow 2 $ fmap (*7) $ run 8) 
+  # s "supergong" 
+  # decay "[1 0.2]/4" 
+  # voice "[0.5 0]/8" 
+
