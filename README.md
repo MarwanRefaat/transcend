@@ -111,6 +111,7 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 - [ ] Start Y Combinator Application
 - [ ] Create guide for GitHub Codespace with pre-configured extensions
 - [ ] Test GitHub action for converting M4A to MP3
+- [ ] Add instructions to the songs.md file explaining the folder structure
 
 # Gallery
 
