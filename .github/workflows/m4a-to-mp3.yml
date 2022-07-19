@@ -1,0 +1,16 @@
+# Simple workflow to convert M4A to MP3 files
+
+name: M4A to MP3 Converter
+
+# Triggers the workflow on push events but only for the master branch using FFmpeg to convert m4a to mp3
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Convert M4A to MP3
+      run: ffmpeg -i $filename.m4a -acodec libmp3lame -ab 128k $filename.mp3
