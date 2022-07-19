@@ -109,6 +109,7 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 - [ ] Create a Transcend DistroKid to distribute music to Spotify/Apple Music
 - [ ] Find a legible way to host video content on a GitHub README page
 - [ ] Start Y Combinator Application
+- [ ] Create guide for GitHub Codespace with pre-configured extensions
 
 # Gallery
 
