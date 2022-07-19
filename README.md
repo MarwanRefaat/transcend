@@ -104,6 +104,11 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 - [ ] Add some rap lyrics on one of Jonah's beats as an early experiment
 - [x] Init repo and start the movement
 - [ ] GitHub action that automatically takes any .m4a file and converts to .mp3
+- [ ] Find one producer "in the wild" who would be interested in hopping on this experiment by contributing a stem
+- [ ] Incorporate Transcend to start opening accounts under the entity name
+- [ ] Create a Transcend DistroKid to distribute music to Spotify/Apple Music
+- [ ] Find a legible way to host video content on a GitHub README page
+- [ ] Start Y Combinator Application
 
 # Gallery
 
