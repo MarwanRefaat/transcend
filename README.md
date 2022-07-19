@@ -92,3 +92,6 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 - [ ] Build an automation with Dall-E (scope out idea)
 - [ ] Add some rap lyrics on one of Jonah's beats as an early experiment
 - [x] Init repo and start the movement
+
+# Gallery
+[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/nTQUwghvy5Q)
