@@ -1,14 +1,22 @@
-# transcend
+# Transcend
 
-Imagine an open-source oscar-winning production...
+Imagine open-source academy award winning productions...
 
-The box office, triple platinum, and masterpiece of the future will be built by an open source hive mind. It will be bidirectional, iterative, generative, evolutionary and transcendent.
+The box office, triple-platinums, and masterpieces of the future will be built by an open-source hive mind. It will be bidirectional, iterative, generative, evolutionary and transcendent.
 
 Great products are built by teams of dedicated people when multiple engineers find that hyper-generative frequency. Great artistic productions are no different.
 
 Engineering = Art
 
 Github = Art Version Control
+
+# 🧭 Mission
+
+Create shared art, share art created.
+
+# 🔭 Vision
+
+Build Product(ions)
 
 # tldr
 
@@ -97,22 +105,42 @@ Composable, remixable, modular, shared building blocks, that are owned and prope
 
 How do we make life more like minecraft? Composable, creative, open, sandbox, shared yet owned, built collaboratively with shared resources and a general collective sense of community without compromising the importance of ego, individualism, and power. People want to feel powerful and people want to build wealth but they also want to be a part of something greater and contribute the wealth they made to something greater. Ownership can only be distributed if it's granted to start with.
 
-# To-Do
-
-- [ ] Tie Readme in with Notion to make more easily editable
-- [ ] Build an automation with Dall-E (scope out idea)
-- [ ] Add some rap lyrics on one of Jonah's beats as an early experiment
-- [x] Init repo and start the movement
-- [ ] GitHub action that automatically takes any .m4a file and converts to .mp3
-- [ ] Find one producer "in the wild" who would be interested in hopping on this experiment by contributing a stem
-- [ ] Incorporate Transcend to start opening accounts under the entity name
-- [ ] Create a Transcend DistroKid to distribute music to Spotify/Apple Music
-- [ ] Find a legible way to host video content on a GitHub README page
-- [ ] Start Y Combinator Application
-- [ ] Create guide for GitHub Codespace with pre-configured extensions
-- [ ] Test GitHub action for converting M4A to MP3
-- [ ] Add instructions to the songs.md file explaining the folder structure
-
 # Gallery
 
 [![GitHub is for Art](https://img.youtube.com/vi/7zUU5rV2Bhc/default.jpg)](https://youtu.be/7zUU5rV2Bhc)
+
+# Running To-Do List
+
+## Engineering
+
+### GitHub
+
+- [x] Init repo and start the movement
+- [ ] GitHub action that automatically takes any .m4a file and converts to .mp3 (completed but broken)
+- [ ] Find a legible way to host video content on a GitHub README page
+- [ ] Create guide for GitHub Codespace with pre-configured extensions
+- [ ] Add instructions to the songs.md file explaining the folder structure
+
+### Micro-Products
+
+- [ ] Build an automation with Dall-E for album covers (scope out idea)
+
+## Music
+
+- [ ] Add some rap lyrics on one of Jonah's beats as an early experiment
+
+## Distribution
+
+- [ ] Create a Transcend DistroKid to distribute music to Spotify/Apple Music
+
+## Outreach
+
+- [ ] Find one producer "in the wild" who would be interested in hopping on this experiment by contributing a stem
+
+## Legal
+
+- [ ] Incorporate Transcend to start opening accounts under the entity name
+
+## Fundraising
+
+- [x] Start Y Combinator Application
