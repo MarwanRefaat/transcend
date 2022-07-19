@@ -94,6 +94,4 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 - [x] Init repo and start the movement
 
 # Gallery
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=nTQUwghvy5Q" target="_blank">
- <img src="http://img.youtube.com/vi/nTQUwghvy5Q/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
-</a>
+[![GitHub is for Art](https://img.youtube.com/vi/7zUU5rV2Bhc/default.jpg)](https://youtu.be/7zUU5rV2Bhc)
