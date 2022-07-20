@@ -131,7 +131,9 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 
 ## Distribution
 
-- [ ] Create a Transcend DistroKid to distribute music to Spotify/Apple Music
+- [x] Create a Transcend DistroKid to distribute music to Spotify/Apple Music
+- [ ] Create a Transcend BeatStars to distribute music to Spotify/Apple Music
+- [ ] Test out DistroKid and BeatStars and determine which platform to use
 
 ## Outreach
 
