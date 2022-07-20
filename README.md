@@ -120,10 +120,15 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 - [ ] Find a legible way to host video content on a GitHub README page
 - [ ] Create guide for GitHub Codespace with pre-configured extensions
 - [ ] Add instructions to the songs.md file explaining the folder structure
+- [ ] Replace running to-do list with GitHub issues workflow
 
 ### Micro-Products
 
 - [ ] Build an automation with Dall-E for album covers (scope out idea)
+
+### Website
+
+- [ ] Redirect https://transcend.productions domain to GitHub
 
 ## Music
 
