@@ -128,7 +128,7 @@ How do we make life more like minecraft? Composable, creative, open, sandbox, sh
 
 ### Website
 
-- [ ] Redirect https://transcend.productions domain to GitHub
+- [ ] Redirect <https://transcend.productions> domain to GitHub
 
 ## Music
 
