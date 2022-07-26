@@ -20,7 +20,7 @@ name: "Notion backup"
 on:
   push:
     branches:
-      - master
+      - notion-backup
   schedule:
     -   cron: "0 */1 * * *"
 
