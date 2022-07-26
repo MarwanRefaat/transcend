@@ -1,3 +1,5 @@
+[![Notion backup](https://github.com/MarwanRefaat/transcend/actions/workflows/notion-backup.yml/badge.svg)](https://github.com/MarwanRefaat/transcend/actions/workflows/notion-backup.yml)
+
 # Transcend
 
 Imagine open-source academy award winning productions...
