@@ -16,9 +16,21 @@ Started as friends but now that’s in the past
 We shifted gears and we’re moving fast
 
 
-Flip the switch just let go
+**Chorus**
 
-If we never try we’ll never
+I don’t quite know how or when when we crossed the line
+
+But I just can't seem to get you off my mind
+
+And we could keep being friends or you could start being mine
+
+Cause it's not like I woke up one day and just flipped a switch
+
+But I knew there was no going back when we kissed
+
+So what if we could be more than just friends with benefits
+
+
 
 Jeapordize our friendship it’s all we know
 
