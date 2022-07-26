@@ -48,13 +48,13 @@
     - [ ]  Survey new hires 2 weeks after first day about experience
     - [ ]  Share onboarding checklist with managers a week in advance
     
+    ---
+    
+    Note that everything above the divider above is simply a part of the Notion default template
+    
     # ⛽️ Fundraising
     
     - [ ]  [Y Combinator application](Y%20Combinator%20d791bf624b3648f39976b5e168be9df8.md)
-    
-    [iCloud Photo Sharing](https://www.icloud.com/sharedalbum/#B10GY8gBYGh0nI3;917E6478-3AFB-4E7E-8B57-1CCF4A5607AF)
-    
-    [https://cvws.icloud-content.com/S/AYhtxE87dFObCacuXb2snrAP4HyT/IMG_5834.mp4?o=ArrJXyLoUn33v-l0BNbNNsAsjo76SuTD_UngQ-yCT_26&v=1&z=https%3A%2F%2Fp62-content.icloud.com%3A443&x=1&a=CAogl7PMTCsu4MPQNIbuBQvruAh4sfCgJBXpMoHWSTOeyW0SZRCG4ZypnzAYhvivrp8wIgEAUgQP4HyTaiUsb9qsK6o9BdhfhXsJmhYaV8joVgDW3OOCsQzA3DIsHv9hxilAciUxIA_SQMsxhZouQ3FchoVtWDBYTt5B17kFaDAZ24z-YovXT6ZV&e=1657686195&r=b3901772-7a3c-43ed-8fda-46ed4d517c4a-1&s=rld_ax04ReMa52ihC5ZN0eMmCKE](https://cvws.icloud-content.com/S/AYhtxE87dFObCacuXb2snrAP4HyT/IMG_5834.mp4?o=ArrJXyLoUn33v-l0BNbNNsAsjo76SuTD_UngQ-yCT_26&v=1&z=https%3A%2F%2Fp62-content.icloud.com%3A443&x=1&a=CAogl7PMTCsu4MPQNIbuBQvruAh4sfCgJBXpMoHWSTOeyW0SZRCG4ZypnzAYhvivrp8wIgEAUgQP4HyTaiUsb9qsK6o9BdhfhXsJmhYaV8joVgDW3OOCsQzA3DIsHv9hxilAciUxIA_SQMsxhZouQ3FchoVtWDBYTt5B17kFaDAZ24z-YovXT6ZV&e=1657686195&r=b3901772-7a3c-43ed-8fda-46ed4d517c4a-1&s=rld_ax04ReMa52ihC5ZN0eMmCKE)
     
     # Distribution
     
