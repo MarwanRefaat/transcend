@@ -1,0 +1,700 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Y Combinator</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d791bf62-4b36-48f3-9976-b5e168be9df8" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/y-combinator-logo.png"/></div><h1 class="page-title">Y Combinator</h1></header><div class="page-body"><p id="41664f63-9d2b-4b27-91d3-2c9b175b252f" class="">
+</p><h1 id="8f65b170-273b-41cf-beae-8ae820b0cb33" class="block-color-orange"><strong>Startup Application Form</strong></h1><p id="ea38aaca-18f1-44dd-82bf-8b0d69f21070" class="block-color-orange">Winter 2023</p><p id="7a08b9cf-f63d-4f31-b0d3-fa773aa798f4" class="">
+</p><hr id="e97e7359-a620-495d-8394-9edc722b500a"/><p id="5f799032-adc9-44a5-be0f-0e9d74602553" class="">
+</p><h2 id="e690920f-10b2-4c1a-8f7b-2a035c23863d" class="block-color-orange"><strong>COMPANY</strong></h2><p id="3c78ef87-391b-47f7-b0f8-7345e34cac3f" class="">
+</p><h3 id="16999400-7088-40c0-9e67-e3fbc9f815e0" class="block-color-orange"><strong>Company name:</strong></h3><p id="bc8248bc-8b05-4273-b65f-338be46027df" class="">Transcend</p><p id="b30319a9-4bf2-4e43-8299-c347b1d13bab" class="">
+</p><h3 id="0beb70f7-3fc3-49d7-9f28-4e6d9fbf5d44" class=""><strong><mark class="highlight-orange">Company url, if any:</mark></strong></h3><p id="37f1a5de-aad5-4d74-a687-e9f0b87fc4c9" class=""><a href="https://transcend.productions">https://transcend.productions</a></p><p id="0ee55316-63f6-4342-990a-0b2f49b37e53" class="">
+</p><h3 id="f5e31704-f05b-4a80-8f79-eac44ee1adba" class=""><mark class="highlight-orange">If you have a demo, what&#x27;s the url? Demo can be anything that shows us how the product works. Usually that&#x27;s a video or screen recording.</mark></h3><p id="dc1c5c68-7040-4106-9e66-5e58db2eb9b8" class="">
+</p><p id="00adde79-a469-4acf-92cb-99ce1ebb6922" class="">
+</p><h3 id="7b530137-1fc8-4ae4-97f0-a0b258e2eb26" class=""><mark class="highlight-orange">Please provide a link to the product, if relevant. Followed by login credentials, if required.</mark></h3><p id="f4a78014-2a09-4b5c-b34e-b4fe1f1dfae7" class="">
+</p><p id="17d77a76-6621-46a5-b12f-0f3fdd109503" class="">
+</p><h3 id="0e16993f-f1c6-414e-9a4f-c14e71e1f0b4" class=""><mark class="highlight-orange">Describe what your company does in 50 characters or less.</mark></h3><p id="dfdc9368-f104-4da7-b97d-78d367bc20df" class="">
+</p><p id="9df14c79-28e3-480d-855e-7fcc1a572f4f" class="">
+</p><h3 id="b8f812c1-1e61-4302-b959-b4970b6ef971" class=""><mark class="highlight-orange">What is your company going to make? Please describe your product and what it does or will do.</mark></h3><p id="60219266-0a85-4942-9333-f14f649d9976" class="">
+</p><p id="3e3acac3-04c1-4241-8a93-fc52e95a4fa9" class="">
+</p><h3 id="dc1c17e8-50c8-452b-a81b-7d5771dd7983" class=""><mark class="highlight-orange">Where do you live now, and where would the company be based after YC?(List as City A, Country A / City B, Country B.)</mark></h3><p id="f19d6ddf-230a-49b9-b8f3-1e69369b5d2b" class="">San Francisco, CA / San Francisco, CA</p><p id="eac7405f-b327-4352-bb5a-57bb7d222232" class="">
+</p><hr id="db4e5a06-1305-40c3-9510-b757cfb7e44d"/><h1 id="2dfbb83e-c969-43e4-af11-f77ab650736f" class="block-color-orange">CONTACT</h1><h3 id="54cef0c2-1a2f-4e77-b6c9-ede6150a4eb9" class="block-color-orange">Personal email address of the founder who is filling out this application:</h3><p id="675a3d88-325c-4b2b-9223-938477ecf2cd" class="block-color-orange">Please enter an email address that you check often and that you will have access to for a long time.</p><p id="9f7e39ac-7fb7-4c29-ab4a-a3fb191afa02" class="">marwan@marwanrefaat.com</p><h2 id="d2d19f51-79f0-44da-be01-547ec4138fba" class="block-color-orange">Phone number:</h2><p id="b6e89cc0-c2c1-48e6-bc60-d0fa11db230a" class="block-color-orange">International numbers will be called with WhatsApp.</p><p id="40d765ab-d54c-4a50-8e99-93f0ad5016cb" class="">(424) 777-4242</p><hr id="21e81166-c0a8-45ad-95bf-0de101d81db1"/><h1 id="0911d154-3205-4664-b3a1-1cd6a162c5b4" class="block-color-orange">FOUNDERS</h1><p id="41aaee49-fe09-4b32-b942-ed6cff427637" class="">
+</p><hr id="fd5a6c17-5679-4244-9273-1338cb3070df"/><p id="b83efb19-4504-4581-aa5a-74caf1d3905c" class="">
+</p><h2 id="b97ccb18-9895-46f4-a949-7ec8230a383e" class="block-color-orange">CATEGORY</h2><p id="bbcb7037-0d65-4166-84df-6178e11f576e" class="">
+</p><h3 id="01e82a82-3c6a-487d-8be8-a2c2c0920448" class="block-color-orange">Which category best applies to your company?</h3><p id="4a0fad99-1971-4eaf-b5f7-698c1614ca52" class="">Media</p><p id="a598b076-d23a-4f47-9182-8d8531546178" class="">
+</p><h3 id="1f8674ff-8061-492b-aaaf-3ffbafa41fc7" class="block-color-orange">Country</h3><p id="ee3fa854-e8a2-4f66-ac2c-9e81202b53cd" class="">United States</p><p id="69279cc1-a821-49a5-9e0a-5377dfec91fe" class="">
+</p><hr id="1181b81c-00e2-4c70-addf-61b78eea685c"/><p id="8db0b70d-3ed9-4720-8276-3b12d4fc6d4d" class="">
+</p><h2 id="58c49c84-9e8c-4d44-9ca7-1a51b119e105" class="block-color-orange">PROGRESS</h2><p id="db4cb546-d583-48cf-8856-c3fed42db9f9" class="">
+</p><h3 id="2438a573-dbeb-496e-9b83-07cfb4e5d9dd" class="block-color-orange">How far along are you?</h3><p id="36c1a064-c4f8-40ed-8d02-ee4682b810ec" class="">
+</p><p id="57810819-d2c1-4a0d-9591-b6a5d6595924" class="">
+</p><h3 id="30d6d2c9-eed9-4cdd-8ff1-8dde1b5f5d27" class="block-color-orange">How long have each of you been working on this? How much of that has been full-time? Please explain.</h3><p id="2b7ede39-852a-49dd-a82e-2165718facb9" class="">
+</p><p id="15cbfdbc-48a2-4804-a861-15421af7e206" class="">
+</p><hr id="32d091ad-40ed-4760-927d-cd53bc1660e8"/><p id="ce3d6183-8996-430f-b9da-48b39d251ed5" class="">
+</p><h2 id="81629765-1d74-4dab-87d9-576d23a5cc80" class="block-color-orange">IDEA</h2><p id="341416b8-a346-4b14-8c19-81c86d0eec91" class="">
+</p><h3 id="c8b17476-34ce-4121-9fe5-5bd9c2be3fd7" class="block-color-orange">Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know people need what you&#x27;re making?</h3><p id="b365c14c-ea6d-4a94-a16c-d446cc9f8bd4" class="">When Marwan was 14 he directed the Musical into the Woods at an all-boys summer camp (cross-dressing and all). It was incredibly impactful on an emotional level for a lot of us and a really powerful bonding experience and years later there seems to have been some professional ROI given the guy who was most opposed to joining it (former quarterback) recently won a daytime Emmy award (Nicholas Alexander Chavez) and remains Marwan’s closest friend from that camp. A claim this grand needs to come with some due diligence so here’s a data room:</p><div id="0d156543-f1be-49f5-8589-17d152ff81de" class="column-list"><div id="b0ea8f53-ceb1-4f27-9d6e-c072ddc4b6d9" style="width:25%" class="column"><figure id="1becfc62-e007-4f23-aa5e-3b40317aa383" class="image"><a href="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5917.png"><img style="width:1170px" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5917.png"/></a></figure></div><div id="46a8ba52-a874-4bd2-98f7-c32cdf9fc7c2" style="width:25%" class="column"><figure id="e5b88b14-5f7c-4e35-b9a2-421516c50978" class="image"><a href="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5932.png"><img style="width:1170px" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5932.png"/></a></figure></div><div id="ef174fda-8bfc-4c6f-aa1c-56f3c62be44c" style="width:25%" class="column"><figure id="d9242984-7586-4feb-8ac2-95f4f3ff525c" class="image"><a href="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5922.png"><img style="width:1170px" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5922.png"/></a></figure></div><div id="5c70a828-7688-4bd1-a507-14b6d71aed9e" style="width:25%" class="column"><figure id="bed26438-d106-4a34-a503-902811e6b5d3" class="image"><a href="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5929.png"><img style="width:1170px" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/IMG_5929.png"/></a></figure></div></div><div id="44854833-b9f6-44cf-9691-5d0315d85eea" class="column-list"><div id="37bf30a2-2dda-42f8-abe7-4fe2d4cd016f" style="width:56.25%" class="column"><figure id="92bb2056-1e74-4fa0-8c71-b7b431c9992a" class="image"><a href="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/Nick_x_Marwan.jpg"><img style="width:960px" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/Nick_x_Marwan.jpg"/></a><figcaption>This picture means a lot to me, the name of a former bully turned closest friend and Hebrew on left tops it off</figcaption></figure></div><div id="85bfff1d-645c-4653-b32f-ba0a6f1e6a40" style="width:43.75000000000001%" class="column"><figure id="bfcc6295-3f71-4d17-8db3-2243dc3c6185" class="image"><a href="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/Google_Chrome_Screenshot_on_07-12-2022_at_04.12PM.png"><img style="width:1268px" src="Y%20Combinator%20d791bf624b3648f39976b5e168be9df8/Google_Chrome_Screenshot_on_07-12-2022_at_04.12PM.png"/></a></figure></div></div><p id="a0ae2226-dc90-4fe1-9287-341c24390456" class="">Shared art is a meaningful direction and tech can unlock another few orders of magnitude.</p><p id="727e1747-5e95-41a4-9f29-6508a38d4915" class="">
+</p><h3 id="4034eca4-f513-4ceb-8672-a8e67d2b75bc" class="block-color-orange">Who are your competitors? What do you understand about your business that they don&#x27;t?</h3><p id="6e17a76e-1690-4896-91dd-2121a5f7bbed" class="">Artists want to perform and need to get paid. Live performance is the highest fidelity fullfilment of what people “want” but there needs to be a way to scale it financially and manage the logistical side of things which is where software must come in.</p><p id="431fd8d0-0b85-4748-94b2-856b9297bdde" class="">
+</p><h3 id="547ce3c2-8ed4-41e4-b623-e80e3be0e16a" class=""><mark class="highlight-orange">How do or will you make money? How much could you make?</mark></h3><p id="3efff2e0-fcae-41d9-ae11-36594b2a0882" class=""><mark class="highlight-orange">(We realize you can&#x27;t know precisely, but give your best estimate.)</mark></p><p id="d3558dc9-4286-43af-8008-18ae6e3b374b" class="">Live performances (”do things that don’t scale” type thing) just to bootstrap some liquidity of artists x engineers and build some momentum and then all those performances will be published on a Transcend spotify/apple music etc. and over time as momentum builds hopefully majority of revenue will come from streaming. The holy grail would be if we can capture enough mindshare to be the distribution platform and potentially some form of membership/subscription revenue for ad-hoc live performances. In other words, we don’t know how we’re going to make money yet?</p><p id="15d72a72-0ab8-4aa4-afc8-3d74c4ea3072" class="">
+</p></div></article></body></html>
