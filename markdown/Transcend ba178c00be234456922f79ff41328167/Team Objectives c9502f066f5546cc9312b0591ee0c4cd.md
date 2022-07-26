@@ -54,7 +54,7 @@
     
     # ⛽️ Fundraising
     
-    - [ ]  [Y Combinator application](Y%20Combinator%20d791bf624b3648f39976b5e168be9df8.md)
+    - [ ]  Y Combinator application
     
     # Distribution
     
