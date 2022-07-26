@@ -16,13 +16,13 @@ Started as friends but now that’s in the past
 We shifted gears and we’re moving fast
 
 
-**Chorus**
 
 I don’t quite know how or when when we crossed the line
 
 But I just can't seem to get you off my mind
 
 And we could keep being friends or you could start being mine
+
 
 Cause it's not like I woke up one day and just flipped a switch
 
@@ -36,7 +36,6 @@ Jeapordize our friendship it’s all we know
 
 But what happen we come the other though
 
-**Chorus**
 
 I don’t quite remember it’s not switch I fell love and but I still remember the feeling then we kissed
 
