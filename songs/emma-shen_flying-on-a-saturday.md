@@ -5,6 +5,16 @@ https://user-images.githubusercontent.com/24831146/180897737-6cc49672-3a87-4594-
 
 Artist: Emma Shen
 
+BPM:
+
+Key:
+
+Artwork:
+
+## Lyrics
+*insert lyrics here*
+
+
 ## Stems
 
 Vocals:
