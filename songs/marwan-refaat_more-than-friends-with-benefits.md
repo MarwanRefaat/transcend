@@ -10,7 +10,47 @@ Key: Bm
 Artwork:
 
 ## Lyrics
-*insert lyrics here*
+
+Started as friends but now that’s in the past
+
+We shifted gears and we’re moving fast
+
+
+Flip the switch just let go
+
+If we never try we’ll never
+
+Jeapordize our friendship it’s all we know
+
+But what happen we come the other though
+
+**Chorus**
+
+I don’t quite remember it’s not switch I fell love and but I still remember the feeling then we kissed
+
+I don’t quite know how or when when we crossed the line
+
+But I can’t stop thinking about a world where you’re miners 
+
+
+We’ve tried being friend and now you should try being mind
+
+
+I get how you’re feeling your on the fence
+
+And One side is our friendship could end
+
+But tell me what do you on the other side
+
+Cause if you feel how I feel how long do you plan to hide
+
+
+Maybe we could more than just than just friends benefits 
+
+
+Now I’m thinking could it be more than this
+
+Maybe we could be more than friends with benefits
 
 
 ## Stems
