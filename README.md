@@ -1,3 +1,5 @@
+[![Notion backup](https://github.com/MarwanRefaat/transcend/actions/workflows/notion-backup.yml/badge.svg?branch=notion-backup)](https://github.com/MarwanRefaat/transcend/actions/workflows/notion-backup.yml)
+
 # notion-backup
 
 This is a very simple tool to export a workspace from [Notion](https://www.notion.so/), designed to work as part of a GitHub workflow.
