@@ -24,6 +24,7 @@ But I just can't seem to get you off my mind
 And we could keep being friends or you could start being mine
 
 
+
 Cause it's not like I woke up one day and just flipped a switch
 
 But I knew there was no going back when we kissed
