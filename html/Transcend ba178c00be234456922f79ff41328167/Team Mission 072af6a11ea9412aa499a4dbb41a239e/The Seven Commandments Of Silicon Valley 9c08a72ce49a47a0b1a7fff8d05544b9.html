@@ -1,0 +1,670 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Seven Commandments Of Silicon Valley</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9c08a72c-e49a-47a0-b1a7-fff8d05544b9" class="page sans"><header><h1 class="page-title"><strong><strong>The Seven Commandments Of Silicon Valley</strong></strong></h1></header><div class="page-body"><figure id="f43ddb91-46db-4b87-a8cd-cafca29a6e97"><a href="https://www.forbes.com/sites/victorhwang/2012/09/24/the-seven-commandments-of-silicon-valley/?sh=41628c132012" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Seven Commandments Of Silicon Valley</div><div class="bookmark-description">Silicon Valley is the world&#x27;s iconic ecosystem of innovation, the &quot;Florence&quot; of our time. Yet the lessons that most people draw from it are often wrong. It is not simply the result of mashing talented people, great ideas, and lots of money together, as many assume. Those are just the [...]</div></div><div class="bookmark-href"><img src="https://i.forbesimg.com/48X48-F.png" class="icon bookmark-icon"/>https://www.forbes.com/sites/victorhwang/2012/09/24/the-seven-commandments-of-silicon-valley/?sh=41628c132012</div></div><img src="https://imageio.forbes.com/blogs-images/thumbnails/blog_2248/pt_2248_214_o.jpg?format=jpg&amp;width=1200" class="bookmark-image"/></a></figure><p id="edeb1a88-a025-4291-b9ab-b7bff3d97039" class="">To really understand Silicon Valley, we must attempt to “see” what is invisible.  Why?  Because the stuff we can’t see—the pattern of behavior among its players—is just as important, if not more important, than the stuff we can see.  The Valley is not like a plantation assembled through the precise, controlled farming of cropland. It’s more like a “rainforest” ecosystem that thrives because its many elements mix together to create new and unexpected flora and fauna. The system thrives when the elements are rapidly combining and recombining, just as they do in a natural biological system.  And the unwritten code of behavior—like a set of invisible laws—is what makes that mixing possible.</p><p id="ce658fff-b543-483c-83f6-6182985d7775" class="">We might call them the “The Seven Commandments” or “The Unwritten Constitution” of Silicon Valley.  In our book, <a href="http://www.therainforestbook.com/"><em>The Rainforest</em></a>, we call them the Rules of the Rainforest.  They are the invisible drivers of what happens every day in the Valley. And they are the lucky result of America’s history, where the westward expansion across the frontier served as an “incubator of cooperation” among diverse strangers and gave rise to an unwritten set of principles that we have been fortunate to inherit.  We can reduce these principles to simple sayings, but one could write a whole dissertation about how each one of them functions in real life.</p><p id="1fc490cc-995d-4e49-adea-88fb4aeb22c4" class=""><strong>Rule #1: Break rules and dream.</strong></p><p id="319ba11e-1a05-4b1a-a79f-1bb5745811b3" class="">In most places around the world, people with big dreams are often considered naïve.  Too often, a sense of fatalism permeates daily life and impedes innovative ideas. But the truth is that every great company in the world at its beginning was little more than two people sitting in a coffee shop, hatching a plan, sketching on a napkin. In Silicon Valley, a fundamental building block is the idea that quixotic quests are not to be laughed at, but are to be embraced. That college dropout wearing a hoodie might well be the world’s next billionaire.</p><p id="597fbc50-52de-4629-b735-7bda56b9d53b" class="">PROMOTED</p><p id="ff3b4e90-052e-4d07-8a2a-636be283b7ac" class=""><strong>Rule #2: Open doors and listen.</strong></p><p id="3bfca320-eb3f-44a7-a276-57d2d0753b38" class="">Opening doors to meet highly diverse people and then listening to them are essential to an innovation ecosystem. Silicon Valley is a product of the collision of the frontier culture (which enabled complete strangers to form wagon trains heading west from Independence, Missouri and to entrust their lives to one another) and the hyper-diversity of modern California. It’s probably not a coincidence that Silicon Valley’s emergence happened in parallel with a sharp increase in the diversity of the population in California.</p><figure id="707b810c-7c48-45f6-8b69-3653bb04476e" class="image"><a href="https://imageio.forbes.com/blogs-images/victorhwang/files/2012/10/300px-Wagon_train.jpg?format=jpg&amp;width=300"><img src="https://imageio.forbes.com/blogs-images/victorhwang/files/2012/10/300px-Wagon_train.jpg?format=jpg&amp;width=300"/></a></figure><p id="f82c68ea-529a-4674-a88e-b312e8b03fc3" class=""><strong>Rule #3: Trust and be trusted.</strong></p><p id="32b641d7-bc76-41a7-aaf0-dd6403a7e683" class="">Rainforests cannot thrive without trust among strangers. In any interaction, the hard part is having the courage to give trust first. The common saying—“business is business”—implies that taking advantage of the other side is an acceptable way to do business. This behavior, however, can kill an innovation ecosystem. <a href="http://www.forbes.com/business/">Business</a> must be suffused with trust, and violations of trust penalized, for the system to work. This concept, while seemingly naïve to outsiders, is fundamental to why replicating Silicon Valley is so difficult. Although trust has a cost for the individual, the absence of trust has an even higher cost for the whole system.</p><p id="88599f5f-b591-47c5-87ff-7bf91ad950d4" class=""><strong>Rule #4: Experiment and iterate together.</strong></p><p id="bd47911c-92f8-4239-ab1f-923213b85be5" class="">Rainforests require that people be willing to experiment together. Innovation is a continuous process of trial and error, misfiring and improving, over and over again. Initial designs are always flawed, so the process of innovation requires experimentation and perseverance. As my colleague <a href="http://www.t2vc.com/who-we-are-3/greg-horowitt-managing-director.html">Greg Horowitt</a> likes to say, “Build not for perfection, but for iteration.”</p><p id="bf6d91ab-0c04-47bd-a2c0-a7cd0b385e61" class=""><strong>Rule #5: Seek fairness, not advantage.</strong></p><p id="384c5284-f04b-45ea-a824-9654012dd6d8" class="">Rainforests require that individuals strive to create fair, positive-sum transactions with each other, not engage in advantageous zero-sum games. This is not easy in most of the world, where business can be about “winning” at all costs.  However, a sense of unfairness among teams or business partners can lead to a rapid breakdown in trust and cause resentments to build. On the other hand, a system in which players feel that they will be treated fairly lowers barriers to transactions, reduces fear, and keeps people incentivized to pursue aspirations together.</p><p id="237720fc-69f0-4daa-b043-9ea3f19082eb" class=""><strong>Rule #6: Err, fail, and persist.</strong></p><p id="775e66e0-40f5-49bb-9dc3-bdfd101129a3" class="">The expectation of people in Rainforests is that there will be many ups and downs, wrong turns, and false starts. The key is to get up and try again. In the Rainforest, error and failure are still unpleasant, but they are not the end of the road. If players learn from the experience and improve their odds of success the next time, then failure and error can actually be good things. From a macro view, there is not real failure in the Rainforest, only learning.</p><p id="83d60a79-8a7f-4321-ba4c-ad1b7a21d6d9" class=""><strong>Rule #7: Pay it forward.</strong></p><p id="3d5be357-7967-4c8b-9156-10da6d1226eb" class="">One of the great surprises for newcomers to Silicon Valley is that, if you need help, you can talk to almost anybody. The reason for this is the notion of “paying it forward”—doing a favor for someone without expecting to get paid back directly. Paying it forward is not done simply to be charitable; the system dies without it.  <a href="http://www.forbes.com/players/">Players</a> in Rainforests maintain faith that everything “comes back around” in the end, like a form of invisible currency. It is as if individuals are making a transaction with the Rainforest as a whole, based on faith that the system ultimately rewards people who are helpful to others.</p><figure id="6a166a12-d049-464b-a3c2-32be3f26f52c" class="image"><a href="https://imageio.forbes.com/blogs-images/victorhwang/files/2012/10/300x198.jpg?format=jpg&amp;width=210"><img src="https://imageio.forbes.com/blogs-images/victorhwang/files/2012/10/300x198.jpg?format=jpg&amp;width=210"/></a></figure><p id="00970e1f-d17c-4a1f-a8ff-0e7c502b35e5" class="">These invisible rules might seem overly simple, or perhaps even silly, to people who are not part of this world.  So test it out: ask an experienced entrepreneur, or better yet, try practicing these rules yourself.  You’ll find that they are not merely frivolous.  They are central to the entrepreneurial experience because, without them, the countless little steps required to build a successful business become overwhelming.  The transaction costs become too onerous, startups die faster, and the whole system slows down.  Remember that startups usually don’t die from a single punch, but rather from a million little cuts.</p><p id="ce1fbb64-de48-4ce0-9639-966ca1768cbd" class="">I believe what has happened here, can happen anywhere.  When a critical mass of people adopts these principles and practices them, ecosystems tend to thrive.  Like an unwritten constitution in Silicon Valley, they are constantly being applied and interpreted every single day, by entrepreneurs, engineers, investors, and others as they interact with one another.  Thus, these rules are not static; they are living and breathing all the time.  But as long as the core principles stay intact, good things happen.</p><p id="4cb56255-08a9-45f4-9513-d1062932d8f7" class="">
+</p></div></article></body></html>
