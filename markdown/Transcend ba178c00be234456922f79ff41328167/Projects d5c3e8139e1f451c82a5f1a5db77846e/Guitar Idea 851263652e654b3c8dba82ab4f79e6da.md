@@ -3,7 +3,7 @@
 BPM: 110
 Created: August 4, 2022 10:10 PM
 Key: B♭ Minor
-Last edited: August 4, 2022 10:44 PM
+Last edited: August 4, 2022 10:53 PM
 Project Type: Song Starter
 Tags: guitar stem, song starter
 
