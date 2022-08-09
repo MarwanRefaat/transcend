@@ -1,13 +1,11 @@
 # Flying on a Saturday
 
 Created: July 27, 2022 4:09 AM
-Last edited: August 9, 2022 12:33 PM
+Last edited: August 9, 2022 4:33 PM
 
 # Song Master
 
 [flying on a saturday - master (untouched).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_-_master_(untouched).mp3)
-
-@jonah steuer we listened to this on repeat yesterday! Beautifully mixed!
 
 # Tracks
 
