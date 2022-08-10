@@ -2,7 +2,7 @@
 
 Completion: 80%
 Created: July 27, 2022 4:09 AM
-Last edited: August 10, 2022 12:02 AM
+Last edited: August 10, 2022 2:14 AM
 
 # Song Master
 
@@ -37,10 +37,6 @@ Emma:
 Marwan:
 
 [  Marwan BG vocals.mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/__Marwan_BG_vocals.mp3)
-
-[https://www.notion.so](https://www.notion.so)
-
-[https://www.notion.so](https://www.notion.so)
 
 ## Flute
 
