@@ -4,12 +4,16 @@ BPM: 66
 Completion: 40%
 Created: August 9, 2022 5:09 PM
 Key: G Minor
-Last edited: August 10, 2022 12:03 AM
+Last edited: August 10, 2022 12:10 AM
 Project Type: Song
 
 # Master
 
 [Rewire your Mind.mp3](Rewire%20your%20Mind%20934e7a5cede04efb86cce4c14d63d09a/Rewire_your_Mind.mp3)
+
+ **DAW File:**
+
+[Rewire your Mind.band.zip](Rewire%20your%20Mind%20934e7a5cede04efb86cce4c14d63d09a/Rewire_your_Mind.band.zip)
 
 # Vocals
 

@@ -1,9 +1,10 @@
 # Inverterbrate
 
 BPM: 102
+Completion: 20%
 Created: August 9, 2022 11:52 PM
 Key: F Major
-Last edited: August 9, 2022 11:54 PM
+Last edited: August 10, 2022 12:06 AM
 
 # **GUIDE:**
 
@@ -85,3 +86,55 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 ---
 
 # **SCRATCHPAD:**
+
+I remember African girls at my school
+Oh they could dance
+
+The way she moves and wind up and either way
+You question if she has a vertebrae
+She said she does but I might need an x-ray
+
+The way you move your body it’s like you don’t have a spine
+You really know what you’re doing when you start to whine
+
+You make me wonder why I ever left Egypt behind
+
+Go to parties my friend Amechi on the beat
+
+Dancing all night she’s energy
+One of two good reasons why she shouldn’t go to sleep
+
+There’s high potential to all of her energy
+
+Nigerians girls they really love their STEM
+But they must hate physics cause they make those laws bend
+
+And if Nigerians are so good at science and at math
+Why do they break the laws of physics every time they dance
+I wanna see the potential of her kinetic energy
+Newton said for every action there’s one equal opposite
+So I’m not breaking the law when I start pushing against to your hips
+F = M A and you know how to shake that wait pardon me
+What I meant to say is I feel the forced of your accelerating mass
+Once we’re in motion there’s no reason they should rest but to make certain we should put that to the test
+
+Once we’re both dancing our bodies will not rest if you don’t believe me put his first law to
+
+Let’s put Newton’s first law to the test
+Once we start moving there’s no reason we should rest
+
+Cause she really masters that kinetic energy
+But enough of physics let’s start talking chemistry
+
+Or better yet let’s talk anatomy
+
+See I really don’t think you were born with a spine
+
+There’s no way you’re not an invertebrate
+The only way you could make your hips gyrate
+
+And all their parents want them to go to medical school
+Guess it makes sense she good at chemistry too
+
+There’s no way they’re not invertebrate
+That’s just not how human hips are able to rotate
