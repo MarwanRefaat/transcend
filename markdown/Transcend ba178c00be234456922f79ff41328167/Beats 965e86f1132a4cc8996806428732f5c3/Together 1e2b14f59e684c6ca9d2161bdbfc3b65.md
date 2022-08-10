@@ -1,3 +1,0 @@
-# Together
-
-Producer: Rebbel
