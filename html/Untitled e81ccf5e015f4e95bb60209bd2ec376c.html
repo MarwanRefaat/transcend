@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Untitled</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e81ccf5e-015f-4e95-bb60-209bd2ec376c" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📱</span></div><h1 class="page-title"></h1></header><div class="page-body"><p id="66a5659c-24e1-48a7-b7c0-e1cbea661ea9" class=""><strong><strong>Lyrics</strong></strong></p><ul id="a88c9dc3-f7e1-4a1f-b85d-24a55f4a9242" class="bulleted-list"><li style="list-style-type:disc"><strong>1</strong><a href="https://www.beatstars.com/beat/mistakes-emotional-piano-ballad-9291891"><strong>&quot;Mistakes&quot; - (Emotional Piano Ballad)</strong></a><figure id="b85fe3e1-e688-4a67-9bd2-ec2458c8a31c" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1670565/image/1631833755/pat-whelen-obndrxb32y-un.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1670565/image/1631833755/pat-whelen-obndrxb32y-un.jpg"/></a></figure><p id="2008baba-c46b-4e06-ab64-05fbf7c7414e" class="">by<a href="https://www.beatstars.com/apcmusic">APC</a> • 66 BPM • 66.8k plays</p><p id="0e9dd6d9-1f75-46fa-a783-dc0efc886cb6" class=""><a href="https://www.beatstars.com/search?q=piano&amp;type=tracks"><strong>#piano</strong></a><a href="https://www.beatstars.com/search?q=lewis-capaldi&amp;type=tracks"><strong>#Lewis Capaldi</strong></a></p><p id="bcec686a-927a-4bd1-9c46-56f1a96925c0" class=""><strong>Lyrics</strong></p></li></ul><ul id="a3656734-ab31-44d9-a467-be002b188453" class="bulleted-list"><li style="list-style-type:disc"><strong>2</strong><a href="https://www.beatstars.com/beat/show-me-11957256"><strong>Show me</strong></a><figure id="524c5b52-a4b8-441d-b6a1-22e43de398ce" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1656237700/screenshot-178-.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1656237700/screenshot-178-.png"/></a></figure><p id="d6beb14c-f77f-4ce3-9974-66365666779a" class="">by<a href="https://www.beatstars.com/jostopac">Jostopac</a> • 102 BPM • 903 plays</p><p id="f0770836-52bd-4777-8b4e-71457c87eb28" class=""><a href="https://www.beatstars.com/search?q=afrobeats&amp;type=tracks"><strong>#afrobeats</strong></a><a href="https://www.beatstars.com/search?q=dancehall&amp;type=tracks"><strong>#dancehall</strong></a></p><p id="7ef555b4-818c-45bd-9294-7a98ee15c0a9" class=""><strong>Lyrics</strong></p></li></ul><ul id="9e4b2c78-729a-4588-a99f-ab06581350ad" class="bulleted-list"><li style="list-style-type:disc"><strong>3</strong><a href="https://www.beatstars.com/beat/another-day-8008734"><strong>Another Day</strong></a><figure id="99e5b706-d40b-4f62-bce2-d7d30aab1cb8" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1440864/iuvs0xuii.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1440864/iuvs0xuii.jpg"/></a></figure><p id="26ddc7af-e1ef-4c16-9291-9049db266b71" class="">by<a href="https://www.beatstars.com/itsbymebeats">itsbymebeats</a> • 135 BPM • 211 plays</p><p id="8c554cd5-9ece-41f8-aab3-8457d2baf7e7" class=""><a href="https://www.beatstars.com/search?q=illenium&amp;type=tracks"><strong>#Illenium</strong></a><a href="https://www.beatstars.com/search?q=marshmello&amp;type=tracks"><strong>#Marshmello</strong></a></p><p id="df3ac8f9-84dc-4e9d-8b89-2b2c0bb43342" class=""><strong>Lyrics</strong></p></li></ul><ul id="b545936a-c33e-4cf7-832a-e825e85a4c1f" class="bulleted-list"><li style="list-style-type:disc"><strong>4</strong><a href="https://www.beatstars.com/beat/memories-sad-acoustic-guitar-instrumental-no-drums-beat-11608691"><strong>&quot;Memories&quot; Sad Acoustic Guitar Instrumental No Drums Beat</strong></a>by<a href="https://www.beatstars.com/prodbyiof">IOF</a> • 124 BPM • 6.7k plays<figure id="d6ac36b1-915b-4eb5-891f-1e39c73e80d4" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/522368/image/1652899553/memories-ac-btstrs.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/522368/image/1652899553/memories-ac-btstrs.jpg"/></a></figure><figure id="f6b8fb4b-18a1-4250-93db-736f9237b948" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="9bc0185b-1cf1-47d5-b48b-fa3cc219c609" class=""><a href="https://www.beatstars.com/search?q=acoustic-guitar&amp;type=tracks"><strong>#acoustic guitar</strong></a><a href="https://www.beatstars.com/search?q=sad-guitar&amp;type=tracks"><strong>#sad guitar</strong></a></p><p id="48fa2fb4-28e3-4f36-a821-b9051139119a" class=""><strong>Lyrics</strong></p></li></ul><ul id="c0124222-97c1-4666-aa7f-77f10d3c078c" class="bulleted-list"><li style="list-style-type:disc"><strong>5</strong><a href="https://www.beatstars.com/beat/full-moon-pop-12146543"><strong>FULL MOON (Pop)</strong></a><figure id="b4499913-d21e-4d16-b4c3-33c3195c64e2" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/3925882/image/1657933946/img-2369png.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/3925882/image/1657933946/img-2369png.png"/></a></figure><p id="9f6d1bc7-a99b-43e8-b2c0-4bee99cafd89" class="">by<a href="https://www.beatstars.com/prorefx">ProRefx</a> • 137 BPM • 28 plays</p><p id="58e1a5b5-db3a-4689-a285-6534a2d89a84" class=""><a href="https://www.beatstars.com/search?q=baby-goth&amp;type=tracks"><strong>#Baby Goth</strong></a><a href="https://www.beatstars.com/search?q=illenium&amp;type=tracks"><strong>#Illenium</strong></a></p><p id="89242246-843a-4d4b-997b-ebf3ae05733d" class=""><strong>Lyrics</strong></p></li></ul><ul id="b8caa3ec-596b-4109-98b0-86302774d64a" class="bulleted-list"><li style="list-style-type:disc"><strong>6</strong><a href="https://www.beatstars.com/beat/atlantis-9990433"><strong>ATLANTIS</strong></a><figure id="dc78981e-6739-472d-8505-b87554fe925f" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/757558/image/1638391978/atlantis-artwork.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/757558/image/1638391978/atlantis-artwork.jpg"/></a></figure><p id="1c12cbf3-71f4-4780-94da-3addb5706c77" class="">by<a href="https://www.beatstars.com/ionikamusic">IONIKA</a> • 137 BPM • 63 plays</p><p id="56873926-8dde-4a21-8e49-56fbe0c4f874" class=""><a href="https://www.beatstars.com/search?q=dabin&amp;type=tracks"><strong>#dabin</strong></a><a href="https://www.beatstars.com/search?q=trivecta&amp;type=tracks"><strong>#trivecta</strong></a></p><p id="0d5c4acc-ce71-4143-9eb7-6f42d52fb9c0" class=""><strong>Lyrics</strong></p></li></ul><ul id="24600c81-2e8d-4b63-8073-c8a944f2ceff" class="bulleted-list"><li style="list-style-type:disc"><strong>7</strong><a href="https://www.beatstars.com/beat/together-edm-pop-kygo-5058984"><strong>Together (EDM Pop, Kygo)</strong></a>by<a href="https://www.beatstars.com/rebbel">Rebbel</a> • 104 BPM • 65.3k plays<figure id="dc8312f5-bbe0-45e6-baf8-5cea9292c360" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/383928/image/Cwqn0nzYN6TN/i888o6ik1.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/383928/image/Cwqn0nzYN6TN/i888o6ik1.jpg"/></a></figure><figure id="77e07681-e0d4-4485-9ff7-866bda5aa2ae" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="b8ffa563-8cb9-4d83-a6de-febb39914b66" class=""><a href="https://www.beatstars.com/search?q=pop&amp;type=tracks"><strong>#Pop</strong></a><a href="https://www.beatstars.com/search?q=edm&amp;type=tracks"><strong>#EDM</strong></a></p><p id="41479339-99d8-47d6-ae9a-7fff0042749d" class=""><strong>Lyrics</strong></p></li></ul><ul id="f8629c0f-e178-44e1-a69d-f8bfaed0604f" class="bulleted-list"><li style="list-style-type:disc"><strong>8</strong><a href="https://www.beatstars.com/beat/fly-11750169"><strong>Fly</strong></a><strong>TRACK NO LONGER AVAILABLE</strong><figure id="0d8a1a27-c16e-4d32-978d-17ddcd45c1d6" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1654254764/screenshot-170-.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1654254764/screenshot-170-.png"/></a></figure><p id="134aa2f7-7333-44dd-8258-27d8ff302974" class="">by<a href="https://www.beatstars.com/jostopac">Jostopac</a> • 100 BPM • 2k plays</p><p id="9ebd3b2f-d1e5-42cf-836f-47e6d38ec9c5" class=""><a href="https://www.beatstars.com/search?q=afrobeats&amp;type=tracks"><strong>#afrobeats</strong></a><a href="https://www.beatstars.com/search?q=tems&amp;type=tracks"><strong>#tems</strong></a></p><p id="01731af5-5eb6-47e5-9050-859ccc4b6511" class=""><strong>Lyrics</strong></p></li></ul><ul id="d1c1d701-ad61-4b33-9570-b967442e222a" class="bulleted-list"><li style="list-style-type:disc"><strong>9</strong><a href="https://www.beatstars.com/beat/closer-chance-the-rapper-type-beat-12134111"><strong>Closer (Chance The Rapper Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 145 BPM • 455 plays<figure id="7447c39e-fb82-417e-926d-2ea8aa49f17d" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1657827533/closer-thumbnail.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1657827533/closer-thumbnail.png"/></a></figure><figure id="cb9e7802-503c-42c1-88ca-a845a6de080c" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="23c84e78-7e44-496d-b3c8-84b7151aaffb" class=""><a href="https://www.beatstars.com/search?q=chance-the-rapper&amp;type=tracks"><strong>#chance the rapper</strong></a><a href="https://www.beatstars.com/search?q=happy&amp;type=tracks"><strong>#happy</strong></a></p><p id="975aa85e-950e-4a89-9aca-6824c954d737" class=""><strong>Lyrics</strong></p></li></ul><ul id="6cbe4edd-5603-4503-9bda-834f1415f096" class="bulleted-list"><li style="list-style-type:disc"><strong>10</strong><a href="https://www.beatstars.com/beat/kisses-11997041"><strong>Kisses</strong></a><figure id="bb140b46-6536-4f14-b625-948e0613e8fe" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/157571/image/1656586105/kisses.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/157571/image/1656586105/kisses.jpg"/></a></figure><p id="5d53720c-c4b6-43b3-9230-473c485be52e" class="">by<a href="https://www.beatstars.com/alvinbrownbeats">ALVIN BROWN BEATS</a> • 695 plays</p><p id="70af0d44-a5b7-4f4e-b387-297c679feabb" class=""><a href="https://www.beatstars.com/search?q=afrobeat&amp;type=tracks"><strong>#afrobeat</strong></a><a href="https://www.beatstars.com/search?q=afropop&amp;type=tracks"><strong>#afropop</strong></a></p><p id="2b06927a-111f-44ce-aa7c-03d6d5d3f53a" class=""><strong>Lyrics</strong></p></li></ul><ul id="b618ac36-c1a8-4230-80c1-0ef3a1ca6c06" class="bulleted-list"><li style="list-style-type:disc"><strong>11</strong><a href="https://www.beatstars.com/beat/pop-3917561"><strong>Pop</strong></a>by<a href="https://www.beatstars.com/gcbeats1">GC</a> • 105 BPM • 9.1k plays<figure id="496cf0a4-5960-4786-9991-12ad0a69cbb6" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/i7qq3jyzn.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/i7qq3jyzn.png"/></a></figure><figure id="118d524f-80a9-40fc-8b7c-ca06c3c12e95" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="0c2d0330-2fe0-43f5-9be2-96aaba052921" class=""><a href="https://www.beatstars.com/search?q=wizkid&amp;type=tracks"><strong>#WizKid</strong></a><a href="https://www.beatstars.com/search?q=camila-cabello&amp;type=tracks"><strong>#Camila Cabello</strong></a></p><p id="f2174950-f10e-4b81-b1da-3d852b380f60" class=""><strong>Lyrics</strong></p></li></ul><ul id="3400bbe1-68c6-49dd-a6c4-027af4178550" class="bulleted-list"><li style="list-style-type:disc"><strong>12</strong><a href="https://www.beatstars.com/beat/win-12099318"><strong>win</strong></a><figure id="f1241776-7d50-4155-a6ff-7e778d1d8cf1" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1657530966/screenshot-184-.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1657530966/screenshot-184-.png"/></a></figure><p id="719728ea-8121-4516-ab3f-426712bca301" class="">by<a href="https://www.beatstars.com/jostopac">Jostopac</a> • 101 BPM • 760 plays</p><p id="845eb8dd-189c-44ab-9bf7-cf88a733ef45" class=""><a href="https://www.beatstars.com/search?q=dancehall&amp;type=tracks"><strong>#dancehall</strong></a><a href="https://www.beatstars.com/search?q=tems&amp;type=tracks"><strong>#tems</strong></a></p><p id="f5bf2e3f-6d22-4d24-b5a4-7e1d897b7d36" class=""><strong>Lyrics</strong></p></li></ul><ul id="ffac2d0e-1f76-4470-8464-3d82826beefc" class="bulleted-list"><li style="list-style-type:disc"><strong>13</strong><a href="https://www.beatstars.com/beat/pop-x-zedd-type-beat-promises-9642789"><strong>pop x zedd type beat &quot;promises&quot;</strong></a><figure id="f1f9753d-7bc7-4e6a-b8ed-db7c8980141e" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/2067780/image/1635086453/main00-00-00-00still165p.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/2067780/image/1635086453/main00-00-00-00still165p.png"/></a></figure><p id="67a8acf9-f3e8-4c5a-ac34-87b382bdd24b" class="">by<a href="https://www.beatstars.com/aesttc">aesttc</a> • 100 BPM • 621 plays</p><p id="71a9e148-ad46-4793-a2b3-48a145193925" class=""><a href="https://www.beatstars.com/search?q=zedd&amp;type=tracks"><strong>#zedd</strong></a><a href="https://www.beatstars.com/search?q=edm&amp;type=tracks"><strong>#edm</strong></a></p><p id="4c2a593b-c38e-4926-9c2e-a69c5665c8b6" class=""><strong>Lyrics</strong></p></li></ul><ul id="eabec8e5-ab94-4d24-8ab3-f866ba445fae" class="bulleted-list"><li style="list-style-type:disc"><strong>14</strong><a href="https://www.beatstars.com/beat/falling-9559183"><strong>FALLING</strong></a><figure id="8dfff450-24c5-401f-a572-89e365f3f105" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1769908/image/1634404925/img-1329.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1769908/image/1634404925/img-1329.jpg"/></a></figure><p id="29ad2d36-5ce3-49ce-9882-1161e7a3fff1" class="">by<a href="https://www.beatstars.com/adelso">ADELSO</a> • 92 BPM • 9.2k plays</p><p id="6ea1baec-cae4-4fbf-a1a5-9518bf023ebe" class=""><a href="https://www.beatstars.com/search?q=toosii&amp;type=tracks"><strong>#toosii</strong></a><a href="https://www.beatstars.com/search?q=guitar&amp;type=tracks"><strong>#guitar</strong></a></p><p id="607b0b7d-a87a-4b78-b141-89ebb54d258d" class=""><strong>Lyrics</strong></p></li></ul><ul id="99aa29cd-b379-4ecb-a922-48810c43d464" class="bulleted-list"><li style="list-style-type:disc"><strong>15</strong><a href="https://www.beatstars.com/beat/feelings-lewis-capaldi-pop-6341239"><strong>Feelings [Lewis Capaldi • Pop]</strong></a>by<a href="https://www.beatstars.com/mantra">mantra</a> • 123 BPM • 50.9k plays<figure id="e193c76f-473d-462d-92d1-07d65e84ce57" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/107267/image/BFPiWoSGlxpg/i2arnu5rp.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/107267/image/BFPiWoSGlxpg/i2arnu5rp.jpg"/></a></figure><figure id="8a57eeae-824e-4668-9854-b722a25da958" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="69f411fc-19b2-4270-84d4-bd4db86f27ce" class=""><a href="https://www.beatstars.com/search?q=pop&amp;type=tracks"><strong>#pop</strong></a><a href="https://www.beatstars.com/search?q=guitar&amp;type=tracks"><strong>#guitar</strong></a></p><p id="b9378838-6bf7-4d2f-8bf5-dafcfb87a114" class=""><strong>Lyrics</strong></p></li></ul><ul id="5b148862-57c5-4d9d-aada-d55b15357c52" class="bulleted-list"><li style="list-style-type:disc"><strong>16</strong><a href="https://www.beatstars.com/beat/distance-the-chainsmokers-type-beat-12047839"><strong>Distance (The Chainsmokers Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 90 BPM • 648 plays<figure id="8c8e973b-7149-41e3-892b-c251580dc75d" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1657057010/distance.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1657057010/distance.png"/></a></figure><figure id="0a6f6ae0-f285-45fb-b863-17f11e3ba581" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="ccb6a170-859b-4249-8d0c-f0ffd6b04978" class=""><a href="https://www.beatstars.com/search?q=chainsmokers&amp;type=tracks"><strong>#chainsmokers</strong></a><a href="https://www.beatstars.com/search?q=the-chainsmokers&amp;type=tracks"><strong>#the chainsmokers</strong></a></p><p id="ee43fdb8-4c40-42a7-8005-a57157ce3017" class=""><strong>Lyrics</strong></p></li></ul><ul id="2d56bd8b-f240-4a77-aa56-e26f21d83032" class="bulleted-list"><li style="list-style-type:disc"><strong>17</strong><a href="https://www.beatstars.com/beat/the-dreamer-11857412"><strong>The Dreamer</strong></a><figure id="659e8093-0cab-43b7-a289-781f54fd577f" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/545852/image/1655253056/d19e88eaee82c2bef1507715f15cce4b-2-.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/545852/image/1655253056/d19e88eaee82c2bef1507715f15cce4b-2-.jpg"/></a></figure><p id="273920d5-8f20-4586-9d53-cb339293170a" class="">by<a href="https://www.beatstars.com/dandmwn">Dan Darmawan</a> • 100 BPM • 1.6k plays</p><p id="3a61909c-aeca-48ee-b345-a286a435a486" class=""><a href="https://www.beatstars.com/search?q=indie&amp;type=tracks"><strong>#indie</strong></a><a href="https://www.beatstars.com/search?q=bedroom-pop&amp;type=tracks"><strong>#bedroom pop</strong></a></p><p id="8adc5686-0256-49c7-abaa-ed0d6033a3a4" class=""><strong>Lyrics</strong></p></li></ul><ul id="503f09cf-ca9f-424f-9042-8fc6cefc13b9" class="bulleted-list"><li style="list-style-type:disc"><strong>18</strong><a href="https://www.beatstars.com/beat/say-yes-the-chainsmokers-type-beat-11978844"><strong>Say Yes (The Chainsmokers Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 98 BPM • 720 plays<figure id="2a023893-7260-4f3b-b1e7-b1571a3760c6" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1656428394/tn.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1656428394/tn.png"/></a></figure><figure id="b23eadd5-e7b6-4213-8a72-9171bf7aefc4" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="702b9ddb-118a-47f9-94b0-36c07bc446e0" class=""><a href="https://www.beatstars.com/search?q=the-chainsmokers&amp;type=tracks"><strong>#the chainsmokers</strong></a><a href="https://www.beatstars.com/search?q=chainsmokers&amp;type=tracks"><strong>#chainsmokers</strong></a></p><p id="3ed60673-a3d3-456e-b1cc-a3b0185c78af" class=""><strong>Lyrics</strong></p></li></ul><ul id="f99df52a-15c5-466a-b609-a6e53e59224c" class="bulleted-list"><li style="list-style-type:disc"><strong>19</strong><a href="https://www.beatstars.com/beat/different-afrobeat-burna-boy-11726804"><strong>DIFFERENT [Afrobeat • Burna Boy]</strong></a>by<a href="https://www.beatstars.com/mantra">mantra</a> • 107 BPM • 4.7k plays<figure id="373e1f1d-00dd-43aa-bfb4-2d6bfeb08038" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/107267/image/1654037373/url-file-import-1654037363072.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/107267/image/1654037373/url-file-import-1654037363072.jpg"/></a></figure><figure id="cd5c9d4c-6c01-4df4-a201-5a0111e1dd9a" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="dc01f68e-a57c-4c19-9397-347040df10aa" class=""><a href="https://www.beatstars.com/search?q=afrobeat&amp;type=tracks"><strong>#afrobeat</strong></a><a href="https://www.beatstars.com/search?q=wizkid&amp;type=tracks"><strong>#wizkid</strong></a></p><p id="2ca181bc-a835-4a80-ae03-76ec2ff20dca" class=""><strong>Lyrics</strong></p></li></ul><ul id="26846a97-0128-4c25-a171-f7e99ec54f8c" class="bulleted-list"><li style="list-style-type:disc"><strong>20</strong><a href="https://www.beatstars.com/beat/lavish-afrobeat-summer-pop-11682166"><strong>LAVISH [Afrobeat • Summer Pop]</strong></a>by<a href="https://www.beatstars.com/mantra">mantra</a> • 100 BPM • 6.7k plays<figure id="da9c22ab-3314-46c1-b3b3-f5dc875db7c5" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/107267/image/1653595678/url-file-import-1653595668087.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/107267/image/1653595678/url-file-import-1653595668087.jpg"/></a></figure><figure id="cc59e830-08f3-44f7-ad29-cc1fc1861667" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="25d353c9-6339-4c1a-bb88-083566ef9e56" class=""><a href="https://www.beatstars.com/search?q=wizkid&amp;type=tracks"><strong>#Wizkid</strong></a><a href="https://www.beatstars.com/search?q=burna-boy&amp;type=tracks"><strong>#Burna Boy</strong></a></p><p id="367d2adc-24a4-48dd-96b4-297ba19cb54f" class=""><strong>Lyrics</strong></p></li></ul><ul id="5b041402-146d-4ca5-9a1d-17deee0244fd" class="bulleted-list"><li style="list-style-type:disc"><strong>21</strong><a href="https://www.beatstars.com/beat/guitar-hard-guitar-beat-7173803"><strong>Guitar | Hard Guitar Beat</strong></a>by<a href="https://www.beatstars.com/waytoolost">waytoolost</a> • 122 BPM • 580k plays<figure id="15f9d095-a444-4329-8f49-a61f10a5ecfe" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/734367/image/wXeBUwqQgRj8/ifqn3tuht.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/734367/image/wXeBUwqQgRj8/ifqn3tuht.png"/></a></figure><figure id="bf9dfc22-d261-44c7-be60-79ae325576fa" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="57bb993f-d267-46f4-909a-13e82b592b86" class=""><a href="https://www.beatstars.com/search?q=guitar&amp;type=tracks"><strong>#guitar</strong></a><a href="https://www.beatstars.com/search?q=freestyle&amp;type=tracks"><strong>#freestyle</strong></a></p><p id="ad260baa-fa2e-4519-9442-70814fbff9ee" class=""><strong>Lyrics</strong></p></li></ul><ul id="6f7dfb6b-bc32-4603-897e-b7b63c15ff04" class="bulleted-list"><li style="list-style-type:disc"><strong>22</strong><a href="https://www.beatstars.com/beat/joker-3353348"><strong>Joker</strong></a><figure id="68c38d00-abfc-41a8-864d-96290c5663ea" class="image"><a href="https://main.v2.beatstars.com/fit-in/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/531856/image/1601580400/gualabeatzlogouf1601580398107uf1601580399079.png"><img src="https://main.v2.beatstars.com/fit-in/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/531856/image/1601580400/gualabeatzlogouf1601580398107uf1601580399079.png"/></a></figure><p id="056aed7a-3e9a-455c-a3ce-913067d14f9a" class="">by<a href="https://www.beatstars.com/gualabeatz">Guala Beatz</a> • 165 BPM • 124.9k plays</p><p id="5fc7984b-02a5-47fd-a2c3-750c3f7f3ba1" class=""><a href="https://www.beatstars.com/search?q=juice-wrld&amp;type=tracks"><strong>#Juice WRLD</strong></a><a href="https://www.beatstars.com/search?q=iann-dior&amp;type=tracks"><strong>#Iann Dior</strong></a></p><p id="b4ea3891-ab3a-4e58-9025-a27144b1ca18" class=""><strong>Lyrics</strong></p></li></ul><ul id="544afa9a-9213-420d-9640-b11fef7b4216" class="bulleted-list"><li style="list-style-type:disc"><strong>23</strong><a href="https://www.beatstars.com/beat/sicko-beat-switch-travis-scott-x-kid-cudi-type-beat-7671307"><strong>Sicko [Beat Switch] Travis Scott x Kid Cudi Type Beat</strong></a>by<a href="https://www.beatstars.com/robevn">Rob EVN</a> • 160 BPM • 17.5k plays<figure id="112340ba-f93d-4296-a576-5c9265530e82" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1777583/image/1637404218/beat-logo-3rd-11-.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1777583/image/1637404218/beat-logo-3rd-11-.png"/></a></figure><figure id="032fe583-767d-4e79-b915-ca7799486388" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="63c0fb7a-03bc-4bd0-b67d-9e0420a4394c" class=""><a href="https://www.beatstars.com/search?q=kid-cudi&amp;type=tracks"><strong>#KID CUDI</strong></a><a href="https://www.beatstars.com/search?q=beat-switch&amp;type=tracks"><strong>#BEAT SWITCH</strong></a></p><p id="d001a7d5-1ed9-4189-b2e3-9c89c82961b4" class=""><strong>Lyrics</strong></p></li></ul><ul id="d7d9c835-5601-45b6-9c72-6334f4f5d364" class="bulleted-list"><li style="list-style-type:disc"><strong>24</strong><a href="https://www.beatstars.com/beat/new-again-drake-type-beat-8858587"><strong>New Again (Drake Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 100 BPM • 3k plays<figure id="0090eb31-947c-4120-9e96-3f1b402b782d" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1627671709/drake-thumbnail.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1627671709/drake-thumbnail.png"/></a></figure><figure id="8e5d58d6-6662-4ced-8853-848ab623778b" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="879eb406-78a0-4f02-8dba-8d62311a76bd" class=""><a href="https://www.beatstars.com/search?q=draket&amp;type=tracks"><strong>#draket</strong></a><a href="https://www.beatstars.com/search?q=travis-scott&amp;type=tracks"><strong>#travis scott</strong></a></p><p id="5a158a7e-0183-4f81-ac7c-ecbeceb0410d" class=""><strong>Lyrics</strong></p></li></ul><ul id="aed1a05e-fb25-4b77-9ba8-1e5cc0d3623f" class="bulleted-list"><li style="list-style-type:disc"><strong>25</strong><a href="https://www.beatstars.com/beat/outside-happy-type-beat-9042642"><strong>Outside (Happy Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 158 BPM • 4k plays<figure id="26d52c28-1199-4bd4-91c5-875ad1ad7b0f" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1629471918/outside-thumbnail.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1629471918/outside-thumbnail.png"/></a></figure><figure id="27ee12ab-08d5-461c-8347-cb002fb78f27" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="8b58b950-545a-4bc7-9f17-5dc62a89464c" class=""><a href="https://www.beatstars.com/search?q=macklemore&amp;type=tracks"><strong>#macklemore</strong></a><a href="https://www.beatstars.com/search?q=happy&amp;type=tracks"><strong>#happy</strong></a></p><p id="3e6efbb1-bd2e-4e4e-a56f-b27c6714997f" class=""><strong>Lyrics</strong></p></li></ul><ul id="72da1117-d16f-44c0-99a1-e3915d2624d5" class="bulleted-list"><li style="list-style-type:disc"><strong>26</strong><a href="https://www.beatstars.com/beat/drifting-guitar-trap-type-beat-10777333"><strong>Drifting (Guitar Trap Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 151 BPM • 1.1k plays<figure id="5ae5c6fb-fa63-417f-824c-9f3716f46b22" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1645392440/desert-6215514-1-.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1645392440/desert-6215514-1-.jpg"/></a></figure><figure id="788a0404-32eb-4e86-b296-1e36818bd0af" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="5854ec07-0e66-49da-b2d7-349900d1c778" class=""><a href="https://www.beatstars.com/search?q=guitar&amp;type=tracks"><strong>#guitar</strong></a><a href="https://www.beatstars.com/search?q=melodic&amp;type=tracks"><strong>#melodic</strong></a></p><p id="76b466ef-e114-438c-8121-f3b5b949fb3a" class=""><strong>Lyrics</strong></p></li></ul><ul id="79426578-4b35-41a5-8f89-b48ba8ceff86" class="bulleted-list"><li style="list-style-type:disc"><strong>27</strong><a href="https://www.beatstars.com/beat/forever-acoustic-guitar-type-beat-11962407"><strong>Forever (Acoustic Guitar Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 150 BPM • 385 plays<figure id="9e9104f7-ace5-42b0-9b2f-53cee35cacc6" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1656275788/forever.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1656275788/forever.png"/></a></figure><figure id="01bf7da5-a092-447a-879d-9f3fe8b52526" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="735833a9-7b22-4431-b484-832325820b6e" class=""><a href="https://www.beatstars.com/search?q=acoustic&amp;type=tracks"><strong>#acoustic</strong></a><a href="https://www.beatstars.com/search?q=acoustic-guitar&amp;type=tracks"><strong>#acoustic guitar</strong></a></p><p id="f26d9c53-3ddf-454d-9850-4eeeb2fd5523" class=""><strong>Lyrics</strong></p></li></ul><ul id="96d0d78e-aa00-43bd-a56a-a2984c272abc" class="bulleted-list"><li style="list-style-type:disc"><strong>28</strong><a href="https://www.beatstars.com/beat/this-way-chance-the-rapper-type-beat-12131973"><strong>This Way (Chance The Rapper Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 95 BPM • 446 plays<figure id="af368901-429b-4fb7-b254-fda7e65b2ad3" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1657816627/this-way.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1657816627/this-way.png"/></a></figure><figure id="8e99a7ca-4c40-4f73-9817-b3b958602349" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="389b6bac-dd34-4d5f-855d-9da8fb574415" class=""><a href="https://www.beatstars.com/search?q=chance-the-rapper&amp;type=tracks"><strong>#chance the rapper</strong></a><a href="https://www.beatstars.com/search?q=happy&amp;type=tracks"><strong>#happy</strong></a></p><p id="848266a0-a48f-473d-878a-fcf508a01784" class=""><strong>Lyrics</strong></p></li></ul><ul id="ca58ae42-3c48-487f-8436-81b4e34ddc6e" class="bulleted-list"><li style="list-style-type:disc"><strong>29</strong><a href="https://www.beatstars.com/beat/all-time-low-justin-bieber-type-beat-7208275"><strong>All Time Low (Justin Bieber Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 90 BPM • 2.1k plays<figure id="6d73ac03-2cdf-4354-ae7f-ef8a5c5fae8a" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/pwlLgcJX3Xb2/i2mn8sz3q.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/pwlLgcJX3Xb2/i2mn8sz3q.png"/></a></figure><figure id="48732bd3-e71b-483f-9c4e-31307c188e35" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="d425ed61-c393-4706-8433-81386ed6a5ec" class=""><a href="https://www.beatstars.com/search?q=gospel&amp;type=tracks"><strong>#gospel</strong></a><a href="https://www.beatstars.com/search?q=mac-miller&amp;type=tracks"><strong>#mac miller</strong></a></p><p id="33ec3005-2f6e-4472-b81e-29613e0f998b" class=""><strong>Lyrics</strong></p></li></ul><ul id="240f5cfd-fa60-4bf4-85b8-049e57e1ec3c" class="bulleted-list"><li style="list-style-type:disc"><strong>30</strong><a href="https://www.beatstars.com/beat/empire-9042921"><strong>Empire</strong></a>by<a href="https://www.beatstars.com/gcbeats1">GC</a> • 140 BPM • 10k plays<figure id="bf2229f7-5fd7-435e-bec0-feb5496a430b" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1629474432/empire.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1629474432/empire.png"/></a></figure><figure id="bc3f2202-0bdf-4ab4-87d2-8a9a69d31a97" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="9df0e456-b14a-4f8c-a061-ef656ca4a7fe" class=""><a href="https://www.beatstars.com/search?q=dababy&amp;type=tracks"><strong>#DaBaby</strong></a><a href="https://www.beatstars.com/search?q=piano&amp;type=tracks"><strong>#Piano</strong></a></p><p id="aea81890-c26a-4940-bfeb-d00d070d1756" class=""><strong>Lyrics</strong></p></li></ul><ul id="6ccc0775-16ab-47d5-b567-e3d8616421a8" class="bulleted-list"><li style="list-style-type:disc"><strong>31</strong><a href="https://www.beatstars.com/beat/love-is-a-game-10693531"><strong>Love is a Game</strong></a>by<a href="https://www.beatstars.com/gcbeats1">GC</a> • 81 BPM • 4.7k plays<figure id="f0c1634e-f2ab-4035-b307-30137c5b2dcd" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1644683054/love-is-a-game.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1644683054/love-is-a-game.png"/></a></figure><figure id="63be0ca9-de3c-40e5-a573-9abdcdabe142" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="2e282dd8-641e-454e-8403-687aeb4ba8ea" class=""><a href="https://www.beatstars.com/search?q=kota-the-friend&amp;type=tracks"><strong>#KOTA the Friend</strong></a><a href="https://www.beatstars.com/search?q=chill&amp;type=tracks"><strong>#Chill</strong></a></p><p id="b1648e6e-0a08-4d71-8b82-f74e970774e7" class=""><strong>Lyrics</strong></p></li></ul><ul id="07bd5c4e-0be0-4451-bbfa-a29f196a4ab2" class="bulleted-list"><li style="list-style-type:disc"><strong>32</strong><a href="https://www.beatstars.com/beat/play-no-games-9703594"><strong>Play No Games</strong></a>by<a href="https://www.beatstars.com/gcbeats1">GC</a> • 97 BPM • 58.9k plays<figure id="a6c44f9a-fa43-46a1-bd63-0ff7045187d0" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1635606764/play-no-games.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1635606764/play-no-games.png"/></a></figure><figure id="8530f39a-e000-4017-8685-b673f06d0f3d" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="4f02e6a5-24c5-4d95-a08f-76280ab8e01f" class=""><a href="https://www.beatstars.com/search?q=blxst&amp;type=tracks"><strong>#Blxst</strong></a><a href="https://www.beatstars.com/search?q=rnb&amp;type=tracks"><strong>#RnB</strong></a></p><p id="4729e36d-222e-40ac-b5ff-9fa3381d9321" class=""><strong>Lyrics</strong></p></li></ul><ul id="8cdbc6e1-edbc-477d-8c2a-00c5146706c1" class="bulleted-list"><li style="list-style-type:disc"><strong>33</strong><a href="https://www.beatstars.com/beat/broken-10960431"><strong>Broken</strong></a>by<a href="https://www.beatstars.com/gcbeats1">GC</a> • 82 BPM • 26.6k plays<figure id="fecc7052-e608-4943-b722-fbd922b11a53" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1647018798/broken.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/361227/image/1647018798/broken.png"/></a></figure><figure id="327bc8d9-3044-47e1-999a-2007b4a4717c" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="8ac10dab-965a-41e1-bf7d-f1d7fffecbe1" class=""><a href="https://www.beatstars.com/search?q=chill&amp;type=tracks"><strong>#Chill</strong></a><a href="https://www.beatstars.com/search?q=rnb&amp;type=tracks"><strong>#RnB</strong></a></p><p id="ba76b454-b7c8-412d-9f7b-8f1e6756b99a" class=""><strong>Lyrics</strong></p></li></ul><ul id="d4f8ae4d-92c7-499a-ab3e-a89cc0a9ed3d" class="bulleted-list"><li style="list-style-type:disc"><strong>34</strong><a href="https://www.beatstars.com/beat/baby-11138444"><strong>Baby</strong></a><figure id="1a5eeb21-cf39-4ec5-ae7c-d191b2202346" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1648652480/screenshot-143-.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1483661/image/1648652480/screenshot-143-.png"/></a></figure><p id="8b602003-39ac-43bd-a13d-9dd87f7cd730" class="">by<a href="https://www.beatstars.com/jostopac">Jostopac</a> • 102 BPM • 44k plays</p><p id="ba1d496f-f224-4072-ad98-6cb36d7e9818" class=""><a href="https://www.beatstars.com/search?q=tems&amp;type=tracks"><strong>#tems</strong></a><a href="https://www.beatstars.com/search?q=dancehall&amp;type=tracks"><strong>#dancehall</strong></a></p><p id="6527c4c1-b5be-4abe-a1f4-9f52de9fb3f1" class=""><strong>Lyrics</strong></p></li></ul><ul id="7beb1a50-01f3-43dd-8067-05119695ba32" class="bulleted-list"><li style="list-style-type:disc"><strong>35</strong><a href="https://www.beatstars.com/beat/neverland-kota-the-friend-type-beat-11287699"><strong>Neverland - Kota The Friend Type Beat</strong></a><figure id="82255c16-e446-4d0a-b161-e762d215aa13" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/585912/image/1649971767/neverland-cover.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/585912/image/1649971767/neverland-cover.png"/></a></figure><p id="1ad110bd-18c8-4332-89c9-8c787f2c1cf3" class="">by<a href="https://www.beatstars.com/pieperbeats">Pieper Beats</a> • 80 BPM • 2.7k plays</p><p id="10ab13ac-8b4d-4ccd-b59e-e446e1e19c46" class=""><a href="https://www.beatstars.com/search?q=kota-the-friend&amp;type=tracks"><strong>#kota the friend</strong></a><a href="https://www.beatstars.com/search?q=mac-miller&amp;type=tracks"><strong>#mac miller</strong></a></p><p id="8a63fc62-5422-4d12-99cb-54e5e40b41bd" class=""><strong>Lyrics</strong></p></li></ul><ul id="22f069ea-469f-4011-8a8c-d3c360d015b4" class="bulleted-list"><li style="list-style-type:disc"><strong>36</strong><a href="https://www.beatstars.com/beat/forget-it-indie-rock-type-beat-10961101"><strong>Forget It (Indie Rock Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 146 BPM • 2k plays<figure id="c2ae1bc9-beee-48c2-9330-6e007de0e9a5" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1647022829/forget-it-tn.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1647022829/forget-it-tn.png"/></a></figure><figure id="b966e89d-a75a-4adc-a905-ce5742f35249" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="5e23c7a9-b092-4246-bb77-ec5ac35822d2" class=""><a href="https://www.beatstars.com/search?q=the-1975&amp;type=tracks"><strong>#the 1975</strong></a><a href="https://www.beatstars.com/search?q=rock&amp;type=tracks"><strong>#rock</strong></a></p><p id="eaa3b048-6840-4430-b029-bb698957d685" class=""><strong>Lyrics</strong></p></li></ul><ul id="a06404b6-25dd-4a8c-a938-f434cf973960" class="bulleted-list"><li style="list-style-type:disc"><strong>37</strong><a href="https://www.beatstars.com/beat/fade-away-the-chainsmokers-type-beat-10681837"><strong>Fade Away (The Chainsmokers Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 95 BPM • 1.5k plays<figure id="d81b0bdb-8aad-42b3-9753-b04f6ddca3ff" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1644582895/fade-away-youtube.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1644582895/fade-away-youtube.png"/></a></figure><figure id="3ed61091-bd0d-41a6-a4c9-fc10da45f68d" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="e2459f41-b217-46a3-9053-76ab75312c10" class=""><a href="https://www.beatstars.com/search?q=the-chainsmokers&amp;type=tracks"><strong>#the chainsmokers</strong></a><a href="https://www.beatstars.com/search?q=future-bass&amp;type=tracks"><strong>#future bass</strong></a></p><p id="9112b0b1-f2c4-452c-b654-937b514d105b" class=""><strong>Lyrics</strong></p></li></ul><ul id="6fb87458-2df3-41af-96de-4eb9be2156a5" class="bulleted-list"><li style="list-style-type:disc"><strong>38</strong><a href="https://www.beatstars.com/beat/hold-on-the-chainsmokers-type-beat-11551994"><strong>Hold On (The Chainsmokers Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 103 BPM • 1.5k plays<figure id="68f2e194-fc31-4de9-9b83-e7a9163384ac" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1652376937/holdon-thumbnail.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1652376937/holdon-thumbnail.png"/></a></figure><figure id="dd12b63a-7259-4154-b75e-8ff8416affcb" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="d47be42c-d4bc-466d-b13e-6d974c177ee4" class=""><a href="https://www.beatstars.com/search?q=the-chainsmokers&amp;type=tracks"><strong>#the chainsmokers</strong></a><a href="https://www.beatstars.com/search?q=justin-bieber&amp;type=tracks"><strong>#justin bieber</strong></a></p><p id="0b31bb5f-4302-4e43-a212-b5eb32dd5a1e" class=""><strong>Lyrics</strong></p></li></ul><ul id="966042d4-f2b1-4f24-9542-7af78dfced48" class="bulleted-list"><li style="list-style-type:disc"><strong>39</strong><a href="https://www.beatstars.com/beat/smile-kyle-x-macklemore-type-beat-11789951"><strong>Smile (KYLE x Macklemore Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 142 BPM • 403 plays<figure id="82c0822e-d396-4f1b-b0c0-0b77c8223c65" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1654624081/fluffy-clouds-in-a-light-blue-sky-on-a-clear-summer-day.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1654624081/fluffy-clouds-in-a-light-blue-sky-on-a-clear-summer-day.jpg"/></a></figure><figure id="ecb804b1-bf2e-46ab-a920-a7884897e3e8" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="ab4b0da3-2e19-4e0c-8bea-7e2114cf1f12" class=""><a href="https://www.beatstars.com/search?q=kyle&amp;type=tracks"><strong>#kyle</strong></a><a href="https://www.beatstars.com/search?q=macklemore&amp;type=tracks"><strong>#macklemore</strong></a></p><p id="f59374db-1ca4-47ba-bc37-88240b5888c0" class=""><strong>Lyrics</strong></p></li></ul><ul id="f062e738-0d44-4501-8ea6-5bbf07490d6b" class="bulleted-list"><li style="list-style-type:disc"><strong>40</strong><a href="https://www.beatstars.com/beat/ready-the-chainsmokers-type-beat-8767304"><strong>Ready (The Chainsmokers Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 173 BPM • 2.9k plays<figure id="f86a87d9-0b04-48b2-a915-b00aa35de2c4" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1626785461/ready.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1626785461/ready.png"/></a></figure><figure id="201374e1-f10d-484d-b2b5-1bedf2591720" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="0d59653e-8a24-486a-b40f-f4ce2298ad1f" class=""><a href="https://www.beatstars.com/search?q=chainsmokers&amp;type=tracks"><strong>#chainsmokers</strong></a><a href="https://www.beatstars.com/search?q=the-chainsmokers&amp;type=tracks"><strong>#the chainsmokers</strong></a></p><p id="d8e91081-2bd6-4f8a-b7da-1fbaf73d31b3" class=""><strong>Lyrics</strong></p></li></ul><ul id="94621336-68ff-4532-a8c7-24f493ed22c5" class="bulleted-list"><li style="list-style-type:disc"><strong>41</strong><a href="https://www.beatstars.com/beat/daydream-chance-the-rapper-type-beat-10773930"><strong>Daydream (Chance The Rapper Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 131 BPM • 5.2k plays<figure id="da16b804-c67c-4239-b4d9-b1a92f73d399" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1645373303/daydream-blank.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1645373303/daydream-blank.png"/></a></figure><figure id="2d3eee37-89a5-4034-a310-aa5347593efe" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="0377ced5-b57a-48f4-bf8f-5e842cb8fd25" class=""><a href="https://www.beatstars.com/search?q=happy&amp;type=tracks"><strong>#happy</strong></a><a href="https://www.beatstars.com/search?q=piano&amp;type=tracks"><strong>#piano</strong></a></p><p id="8e5439e3-3ee3-467b-9b2a-6180acea11a2" class=""><strong>Lyrics</strong></p></li></ul><ul id="b820fb7a-e5c2-45b8-9752-81780220d8ca" class="bulleted-list"><li style="list-style-type:disc"><strong>42</strong><a href="https://www.beatstars.com/beat/light-it-up-imagine-dragons-alternative-10573117"><strong>Light It Up (Imagine Dragons | Alternative)</strong></a>by<a href="https://www.beatstars.com/pacificmusic">Pacific</a> • 80 BPM • 7.6k plays<figure id="a0ece37c-0edc-459c-8860-e8c66c2b717a" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/648273/image/1643711605/light-it-up-artwork.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/648273/image/1643711605/light-it-up-artwork.png"/></a></figure><figure id="67f17c33-d0aa-421c-959c-eee7a539bc72" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="8dd2f233-e8d8-441a-9464-da9bba5dbde2" class=""><a href="https://www.beatstars.com/search?q=imagine-dragons&amp;type=tracks"><strong>#imagine dragons</strong></a><a href="https://www.beatstars.com/search?q=alternative&amp;type=tracks"><strong>#alternative</strong></a></p><p id="c7b0b8e2-103c-472c-bbf4-0751475d682c" class=""><strong>Lyrics</strong></p></li></ul><ul id="92e95e33-f8b9-4a23-9a40-96fe00c58e4e" class="bulleted-list"><li style="list-style-type:disc"><strong>43</strong><a href="https://www.beatstars.com/beat/adventures-11944769"><strong>adventures</strong></a>by<a href="https://www.beatstars.com/heydium">heydium</a> • 160 BPM • 818 plays<figure id="f42474b9-130c-4fa7-8536-bd61792a33d1" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1260606/image/1656097589/adventures.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1260606/image/1656097589/adventures.png"/></a></figure><figure id="6f1a9b31-dec6-409c-b6ee-dfed90ac4c11" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="0195421e-659b-41cc-a3cd-34b3ecec83cc" class=""><a href="https://www.beatstars.com/search?q=powfu&amp;type=tracks"><strong>#powfu</strong></a><a href="https://www.beatstars.com/search?q=ukulele&amp;type=tracks"><strong>#ukulele</strong></a></p><p id="8bef71d4-2b3c-4233-8d48-071460aa5cc3" class=""><strong>Lyrics</strong></p></li></ul><ul id="329235cb-08b8-4449-bf8c-3e0e26ba96ab" class="bulleted-list"><li style="list-style-type:disc"><strong>44</strong><a href="https://www.beatstars.com/beat/text-me-back-8254329"><strong>text me back</strong></a>by<a href="https://www.beatstars.com/heydium">heydium</a> • 140 BPM • 22.8k plays<figure id="97547777-dc75-4801-a067-ef463fc3d783" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1260606/ir0ouzxia.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1260606/ir0ouzxia.jpg"/></a></figure><figure id="b15037b7-ba62-49ce-9320-5b963285267a" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="18793d3f-17bb-4932-b820-c7a8d023b42c" class=""><a href="https://www.beatstars.com/search?q=indie&amp;type=tracks"><strong>#indie</strong></a><a href="https://www.beatstars.com/search?q=ukulele&amp;type=tracks"><strong>#ukulele</strong></a></p><p id="14c70406-7305-4b9f-ac82-f7d2becd9daf" class=""><strong>Lyrics</strong></p></li></ul><ul id="cc0f3c64-7c42-4813-9750-6de6ed3fc5e6" class="bulleted-list"><li style="list-style-type:disc"><strong>45</strong><a href="https://www.beatstars.com/beat/falling-indie-rock-type-beat-6752488"><strong>&quot;Falling&quot; (Indie Rock Type Beat)</strong></a><figure id="bfc73c47-c722-4f72-ab1a-d3c3d77020c0" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1769337/image/buB1jVG8zCEO/i11x89xysy.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/1769337/image/buB1jVG8zCEO/i11x89xysy.jpg"/></a></figure><p id="4220808b-a668-4a26-9513-8e053f14dc71" class="">by<a href="https://www.beatstars.com/wetgropes">wetgropes</a> • 137 BPM • 11.8k plays</p><p id="98b4843a-830b-4b60-be5e-0e5f7bbbc272" class=""><a href="https://www.beatstars.com/search?q=indie&amp;type=tracks"><strong>#indie</strong></a><a href="https://www.beatstars.com/search?q=rock&amp;type=tracks"><strong>#rock</strong></a></p><p id="cae9fe9f-efcd-475c-b794-6c2fbdb00fe1" class=""><strong>Lyrics</strong></p></li></ul><ul id="079e4902-7567-43b0-8ea4-23e0872cb671" class="bulleted-list"><li style="list-style-type:disc"><strong>46</strong><a href="https://www.beatstars.com/beat/run-imagine-dragons-alternative-pop-11750473"><strong>Run (Imagine Dragons | Alternative Pop)</strong></a>by<a href="https://www.beatstars.com/pacificmusic">Pacific</a> • 85 BPM • 2.7k plays<figure id="185cd4f8-3dff-4360-a73f-fd118be54f32" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/648273/image/1654258723/run-artwork.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/648273/image/1654258723/run-artwork.png"/></a></figure><figure id="ffad1c03-d8e7-4897-b494-5242490771a5" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="a55e91b4-5bd5-4d97-962b-705bd2ba6a4e" class=""><a href="https://www.beatstars.com/search?q=imagine-dragons&amp;type=tracks"><strong>#imagine dragons</strong></a><a href="https://www.beatstars.com/search?q=alternative-pop&amp;type=tracks"><strong>#alternative pop</strong></a></p><p id="3fd78b5b-1c10-4845-9bda-582dfc4e52a0" class=""><strong>Lyrics</strong></p></li></ul><ul id="63d12b16-fa52-4c83-bfbf-405ac12ac6f1" class="bulleted-list"><li style="list-style-type:disc"><strong>47</strong><a href="https://www.beatstars.com/beat/lie-to-me-two-feet-dark-pop-11877928"><strong>Lie To Me (Two Feet | Dark Pop)</strong></a>by<a href="https://www.beatstars.com/pacificmusic">Pacific</a> • 75 BPM • 1.9k plays<figure id="dd46fc10-63b8-48e8-b813-97ef110aba07" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/648273/image/1655461752/lie-to-me-artwork.png"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/648273/image/1655461752/lie-to-me-artwork.png"/></a></figure><figure id="ff87700d-5f6d-4769-92bf-853bd9f5e986" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="fae43cd9-a4b5-4f2c-9fa1-9e78db7756bb" class=""><a href="https://www.beatstars.com/search?q=two-feet&amp;type=tracks"><strong>#two feet</strong></a><a href="https://www.beatstars.com/search?q=alternative&amp;type=tracks"><strong>#alternative</strong></a></p><p id="fc4a36f9-7491-43b7-ac22-a09ab00d8694" class=""><strong>Lyrics</strong></p></li></ul><ul id="d7e500bf-80a2-4a71-908a-42632bdbe3c9" class="bulleted-list"><li style="list-style-type:disc"><strong>48</strong><a href="https://www.beatstars.com/beat/flow-freestyle-10031538"><strong>Flow Freestyle</strong></a><figure id="5ae81ae6-1e03-4b0b-bf18-e471532c5bd1" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/2014367/image/1638810958/weeedds.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/2014367/image/1638810958/weeedds.jpg"/></a></figure><p id="105cfcc9-f98f-4f15-bdc0-1bf16d654fd3" class="">by<a href="https://www.beatstars.com/darksideonthetrack">darksideonthetrack</a> • 116 BPM • 2.1k plays</p><p id="4e3fdb8c-0fb2-4715-b375-104b7e9b8520" class=""><a href="https://www.beatstars.com/search?q=hard&amp;type=tracks"><strong>#hard</strong></a><a href="https://www.beatstars.com/search?q=trap&amp;type=tracks"><strong>#trap</strong></a></p><p id="ce339ba7-8f35-4791-9636-e8b4437ca881" class=""><strong>Lyrics</strong></p></li></ul><ul id="98de6bea-57bb-4e36-907b-f0a13afb70e8" class="bulleted-list"><li style="list-style-type:disc"><strong>49</strong><a href="https://www.beatstars.com/beat/the-middle-the-chainsmokers-type-beat-9653991"><strong>The Middle (The Chainsmokers Type Beat)</strong></a>by<a href="https://www.beatstars.com/omitobeats">Omito</a> • 90 BPM • 2.1k plays<figure id="c2c5471e-a877-48d4-bace-c41b5a737266" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1635182856/pexels-aron-visuals-16468.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/122660/image/1635182856/pexels-aron-visuals-16468.jpg"/></a></figure><figure id="35718f4c-c97f-42f1-a79c-86696448e3ba" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="cb55bcda-4c38-4417-a89f-8dfa742d5c8f" class=""><a href="https://www.beatstars.com/search?q=the-chainsmokers&amp;type=tracks"><strong>#the chainsmokers</strong></a><a href="https://www.beatstars.com/search?q=zedd&amp;type=tracks"><strong>#zedd</strong></a></p><p id="fce04ef4-e6dd-4cac-8b9f-a103bde2f5bc" class=""><strong>Lyrics</strong></p></li></ul><ul id="37a48969-4760-462c-b8da-cf13d15da9e1" class="bulleted-list"><li style="list-style-type:disc"><strong>50</strong><a href="https://www.beatstars.com/beat/happiness-acoustic-guitar-x-indie-type-instrumental-6900248"><strong>&quot;Happiness&quot; Acoustic Guitar x Indie Type Instrumental</strong></a>by<a href="https://www.beatstars.com/prodbyiof">IOF</a> • 123 BPM • 63.6k plays<figure id="1a632761-9afc-4f5a-a55b-2643456f22c7" class="image"><a href="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/522368/image/SrmUXNpHFvBL/ib728vn01.jpg"><img src="https://main.v2.beatstars.com/fit-in/tracks/100x100/filters:format(.jpeg):quality(80):fill(000000)/users/prod/522368/image/SrmUXNpHFvBL/ib728vn01.jpg"/></a></figure><figure id="f2971005-02ae-4c4f-8ed8-98a6faea7fd2" class="image"><a href="https://www.beatstars.com/assets/img/profile-badges/verified.svg"><img src="https://www.beatstars.com/assets/img/profile-badges/verified.svg"/></a></figure><p id="025c7d65-6c95-441b-8919-1458cabbea41" class=""><a href="https://www.beatstars.com/search?q=acoustic-guitar&amp;type=tracks"><strong>#acoustic guitar</strong></a><a href="https://www.beatstars.com/search?q=guitar-no-drums&amp;type=tracks"><strong>#guitar no drums</strong></a></p><p id="a15d1bf1-93f9-4672-991a-1d093fd6f55d" class=""><strong>Lyrics</strong></p></li></ul><h3 id="5eb3b15c-01fc-4e87-8e23-920c3c36be4f" class=""></h3><h1 id="ca94ee61-2453-4274-adc4-bd66015a5591" class=""></h1><figure id="f4a90f74-b654-473c-9d8f-c8c9c0b01d7d" class="image"><a href="https://www.beatstars.com/assets/img/bs-logos/logo-red.svg"><img src="https://www.beatstars.com/assets/img/bs-logos/logo-red.svg"/></a></figure></div></article></body></html>
