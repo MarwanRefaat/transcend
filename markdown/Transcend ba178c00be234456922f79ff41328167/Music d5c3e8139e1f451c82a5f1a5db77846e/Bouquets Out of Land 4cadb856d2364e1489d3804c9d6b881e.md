@@ -2,7 +2,7 @@
 
 Created: August 10, 2022 1:50 PM
 Last edited: August 10, 2022 1:54 PM
-Project Type: Lyrics, Song Starter
+Ready for Release: No
 
 # **GUIDE:**
 

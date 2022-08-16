@@ -5,7 +5,7 @@ Completion: 40%
 Created: August 9, 2022 5:09 PM
 Key: G Minor
 Last edited: August 10, 2022 11:45 AM
-Project Type: Song
+Ready for Release: No
 
 # Master
 

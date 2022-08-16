@@ -5,6 +5,7 @@ Completion: 20%
 Created: August 9, 2022 11:52 PM
 Key: F Major
 Last edited: August 10, 2022 11:45 AM
+Ready for Release: No
 
 # **GUIDE:**
 

@@ -2,7 +2,8 @@
 
 Completion: 60%
 Created: August 12, 2022 1:43 PM
-Last edited: August 15, 2022 9:37 PM
+Last edited: August 15, 2022 9:53 PM
+Ready for Release: No
 
 # **GUIDE:**
 
@@ -79,14 +80,14 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 # LYRICS:
 
 <aside>
-📋 **SONG STRUCTURE: intro|**ABABCB|outro
+📋 **SONG STRUCTURE:** ABABCB
 
 </aside>
 
 > **A1:** **VERSE**
 > 
 > 
-> **`Am` `Em` `F` `E`**
+> `Am` `Em` `F` `E`
 > 
 > I remember when we were younger, we’d go walking through the streets
 > 
@@ -144,217 +145,126 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 > **A2: VERSE**
 > 
 > 
-> What was it you were looking for that took your life that night? 
-> They said they found my high school ring clutched in your fingers tight.
+> `Am` `Em` `F` `E`
+> 
+> Minutes turn to hours
+> 
+> Turn to days turn into years
+> 
+> `Am` `Em` `F` `E`
+> 
+> Fairytales turn into legends
+> 
+> As we face all of our fears
+> 
+> `Am` `Em` `F` `E`
+> 
+> Take a step and don’t look back and
+> 
+> Build the world you want to see
+> 
+> `Am` `Em` `F` `Am`
+> 
+> Climb that mountain look around and
+> 
+> This is where we were both meant to be
+> 
+> `Am` `Em` `F` `E`
+> 
+> `Am` `Em` `F` `E`
 > 
 
-> **B:** **CHORUS**
+> **B: CHORUS**
 > 
 > 
-> Teen Angel, can you hear me? 
+> `Am` `Em` `F` `E`
 > 
-> Teen Angel, can you see me? 
+> We will walk the walk don’t walk away
 > 
-> Are you somewhere up above, 
+> Count your blessings for now
 > 
-> and am I still your own true love?
+> `Am` `Em` `F` `E`
+> 
+> Say the things we’ve always wanted to say
+> 
+> Make sure they are loud
+> 
+> `Am` `Em` `F` `E`
+> 
+> And the wishes we once made
+> 
+> Fuel the fire feel the flames
+> 
+> `Am` `Em` `F` `Am`
+> 
+> What was lost is finally found
+> 
+> Building kingdoms the ground
+> 
+> `Em` `F` `E`
+> 
+> `Am` `Em` `F` `E`
 > 
 
 > **C: BRIDGE**
 > 
 > 
-> Just sweet sixteen, and now you're gone. 
+> `Am` `Em` `F` `E`
 > 
-> They've taken you away. 
+> Have you ever held
 > 
-> I'll never kiss your lips again. 
+> A dream in your hands
 > 
-> They buried you today.
+> `Am` `Em` `F` `E`
 > 
-
-> **B:** **CHORUS**
+> I’ll share it with you now
 > 
+> Soon you’ll understand
 > 
-> Teen Angel, can you hear me? 
+> `Am` `Em` `F` `E`
 > 
-> Teen Angel, can you see me? 
+> The fires burning quick
 > 
-> Are you somewhere up above, 
+> Count backwards from ten
 > 
-> and am I still your own true love?
+> `Am` `Em` `F` `Am`
 > 
-
-> **OUTRO**
+> If it burns our kingdom down
 > 
-> 
-> Teen angel, teen angel,
-> 
-> Answer me, please…
+> We’ll rebuild it once again
 > 
 
-# Kingdoms
-
-Verse
-
-Am Em F E
-
-I remember when we were younger, we’d go walking through the streets
-
-Am Em F E
-
-Oh this place it feels so massive
-
-Worlds of wonder at our feet
-
-Am Em F E
-
-Light a candle, close your eyes and, make a wish just give me your hand
-
-Am Em F Am
-
-Keep it inside, this is real life, hold your breath baby I’ve got a plan
-
-Em F E
-
-Am Em F E
-
-Chorus
-
-Am Em F E
-
-We will walk the walk don’t walk away
-
-Count your blessings for now
-
-Am Em F E
-
-Say the things we’ve always wanted to say
-
-Make sure they are loud
-
-Am Em F E
-
-And the wishes we once made
-
-Fuel the fire feel the flames
-
-Am Em F Am
-
-What was lost is finally found
-
-Building kingdoms the ground
-
-Em F E
-
-Am Em F E
-
-Verse
-
-Am Em F E
-
-Minutes turn to hours
-
-Turn to days turn into years
-
-Am Em F E
-
-Fairytales turn into legends
-
-As we face all of our fears
-
-Am Em F E
-
-Take a step and don’t look back and
-
-Build the world you want to see
-
-Am Em F Am
-
-Climb that mountain look around and
-
-This is where we were both meant to be
-
-Am Em F E
-
-Am Em F E
-
-Chorus
-
-Am Em F E
-
-We will walk the walk don’t walk away
-
-Count your blessings for now
-
-Am Em F E
-
-Say the things we’ve always wanted to say
-
-Make sure they are loud
-
-Am Em F E
-
-And the wishes we once made
-
-Fuel the fire feel the flames
-
-Am Em F Am
-
-What was lost is finally found
-
-Building kingdoms the ground
-
-Bridge
-
-Am Em F E
-
-Have you ever held
-
-A dream in your hands
-
-Am Em F E
-
-I’ll share it with you now
-
-Soon you’ll understand
-
-Am Em F E
-
-The fires burning quick
-
-Count backwards from ten
-
-Am Em F Am
-
-If it burns our kingdom down
-
-We’ll rebuild it once again
-
-Chorus
-
-Am Em F E
-
-We will walk the walk don’t walk away
-
-Count your blessings for now
-
-Am Em F E
-
-Say the things we’ve always wanted to say
-
-Make sure they are loud
-
-Am Em F E
-
-And the wishes we once made
-
-Fuel the fire feel the flames
-
-Am Em F Am
-
-Our prints are so profound
-
-Building kingdoms the ground
+> **B: CHORUS**
+> 
+> 
+> `Am` `Em` `F` `E`
+> 
+> We will walk the walk don’t walk away
+> 
+> Count your blessings for now
+> 
+> `Am` `Em` `F` `E`
+> 
+> Say the things we’ve always wanted to say
+> 
+> Make sure they are loud
+> 
+> `Am` `Em` `F` `E`
+> 
+> And the wishes we once made
+> 
+> Fuel the fire feel the flames
+> 
+> `Am` `Em` `F` `Am`
+> 
+> What was lost is finally found
+> 
+> Building kingdoms the ground
+> 
+> `Em` `F` `E`
+> 
+> `Am` `Em` `F` `E`
+> 
 
 ---
 

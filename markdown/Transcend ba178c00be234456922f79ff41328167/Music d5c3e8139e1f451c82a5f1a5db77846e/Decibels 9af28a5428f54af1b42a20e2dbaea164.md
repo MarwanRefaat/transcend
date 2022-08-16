@@ -3,6 +3,7 @@
 Completion: 20%
 Created: August 10, 2022 12:18 AM
 Last edited: August 10, 2022 11:45 AM
+Ready for Release: No
 
 # **GUIDE:**
 
