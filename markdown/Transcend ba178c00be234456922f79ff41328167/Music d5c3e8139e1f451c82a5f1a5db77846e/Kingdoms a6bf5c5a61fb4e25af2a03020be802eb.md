@@ -1,7 +1,8 @@
 # Kingdoms
 
+Completion: 60%
 Created: August 12, 2022 1:43 PM
-Last edited: August 12, 2022 1:44 PM
+Last edited: August 15, 2022 9:37 PM
 
 # **GUIDE:**
 
@@ -41,7 +42,7 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 
 # MASTER:
 
-[https://www.notion.so](https://www.notion.so)
+[Kingdoms by Emma Shen.m4a](Kingdoms%20a6bf5c5a61fb4e25af2a03020be802eb/Kingdoms_by_Emma_Shen.m4a)
 
 ## **DAW File**
 
@@ -76,6 +77,120 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 ---
 
 # LYRICS:
+
+<aside>
+📋 **SONG STRUCTURE: intro|**ABABCB|outro
+
+</aside>
+
+> **A1:** **VERSE**
+> 
+> 
+> **`Am` `Em` `F` `E`**
+> 
+> I remember when we were younger, we’d go walking through the streets
+> 
+> `Am` `Em` `F` `E`
+> 
+> Oh this place it feels so massive
+> 
+> Worlds of wonder at our feet
+> 
+> `Am` `Em` `F` `E`
+> 
+> Light a candle, close your eyes and, make a wish just give me your hand
+> 
+> `Am` `Em` `F` `Am`
+> 
+> Keep it inside, this is real life, hold your breath baby I’ve got a plan
+> 
+> `Em` `F` `E`
+> 
+> `Am` `Em` `F` `E`
+> 
+
+> **B: CHORUS**
+> 
+> 
+> `Am` `Em` `F` `E`
+> 
+> We will walk the walk don’t walk away
+> 
+> Count your blessings for now
+> 
+> `Am` `Em` `F` `E`
+> 
+> Say the things we’ve always wanted to say
+> 
+> Make sure they are loud
+> 
+> `Am` `Em` `F` `E`
+> 
+> And the wishes we once made
+> 
+> Fuel the fire feel the flames
+> 
+> `Am` `Em` `F` `Am`
+> 
+> What was lost is finally found
+> 
+> Building kingdoms the ground
+> 
+> `Em` `F` `E`
+> 
+> `Am` `Em` `F` `E`
+> 
+
+> **A2: VERSE**
+> 
+> 
+> What was it you were looking for that took your life that night? 
+> They said they found my high school ring clutched in your fingers tight.
+> 
+
+> **B:** **CHORUS**
+> 
+> 
+> Teen Angel, can you hear me? 
+> 
+> Teen Angel, can you see me? 
+> 
+> Are you somewhere up above, 
+> 
+> and am I still your own true love?
+> 
+
+> **C: BRIDGE**
+> 
+> 
+> Just sweet sixteen, and now you're gone. 
+> 
+> They've taken you away. 
+> 
+> I'll never kiss your lips again. 
+> 
+> They buried you today.
+> 
+
+> **B:** **CHORUS**
+> 
+> 
+> Teen Angel, can you hear me? 
+> 
+> Teen Angel, can you see me? 
+> 
+> Are you somewhere up above, 
+> 
+> and am I still your own true love?
+> 
+
+> **OUTRO**
+> 
+> 
+> Teen angel, teen angel,
+> 
+> Answer me, please…
+> 
 
 # Kingdoms
 

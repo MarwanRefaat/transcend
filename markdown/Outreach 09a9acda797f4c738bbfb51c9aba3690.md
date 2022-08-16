@@ -1,4 +1,4 @@
-# People to Reach Out To
+# Outreach
 
 - Ruth (Setty’s girlfriend)
 - William Lipton
