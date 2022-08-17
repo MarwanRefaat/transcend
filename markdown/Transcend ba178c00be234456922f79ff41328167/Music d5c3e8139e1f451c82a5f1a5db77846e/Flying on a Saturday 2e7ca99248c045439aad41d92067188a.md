@@ -2,13 +2,17 @@
 
 Completion: 80%
 Created: July 27, 2022 4:09 AM
-Last edited: August 15, 2022 10:28 PM
+Last edited: August 16, 2022 8:38 PM
 Ready for Release: No
 Track Price: 0.99
 
 # Master
 
 [flying on a saturday - master (untouched).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_-_master_(untouched).mp3)
+
+# Instrumental
+
+[Flying on a Saturday by Emma Shen (Instrumental).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Flying_on_a_Saturday_by_Emma_Shen_(Instrumental).mp3)
 
 # Tracks
 
