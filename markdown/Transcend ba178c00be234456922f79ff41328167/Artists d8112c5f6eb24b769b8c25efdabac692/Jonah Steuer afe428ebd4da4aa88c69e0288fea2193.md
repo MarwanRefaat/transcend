@@ -3,5 +3,6 @@
 Art form: Drums, Guitarist, Pianist, Producer
 Created time: July 27, 2022 4:23 AM
 Gender: Man
-Last edited time: August 16, 2022 9:19 PM
+Headshot: IMG_4146.heic
+Last edited time: August 18, 2022 1:32 PM
 Nationality: United States
