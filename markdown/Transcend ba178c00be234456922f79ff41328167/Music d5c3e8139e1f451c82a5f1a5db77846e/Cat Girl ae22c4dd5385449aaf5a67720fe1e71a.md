@@ -3,7 +3,6 @@
 Completion: 20%
 Created: August 18, 2022 2:25 PM
 Last edited: August 18, 2022 2:27 PM
-Project Type: song starter
 Ready for Release: No
 
 # **GUIDE:**
