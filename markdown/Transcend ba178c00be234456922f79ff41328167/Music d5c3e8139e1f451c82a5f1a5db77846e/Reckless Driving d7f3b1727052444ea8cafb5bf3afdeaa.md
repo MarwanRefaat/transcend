@@ -2,9 +2,10 @@
 
 Artwork: Reckless_Driving_Artwork.png
 BPM: 120
+Completion: 80%
 Created: August 18, 2022 8:21 PM
 Key: B Major
-Last edited: August 19, 2022 9:24 PM
+Last edited: August 20, 2022 2:07 PM
 Looking For: Drums, Pianist
 Primary Genre: Singer/Songwriter
 Project Type: Song in Progress
