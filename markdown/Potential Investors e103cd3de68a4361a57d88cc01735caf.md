@@ -1,0 +1,24 @@
+# Potential Investors
+
+- Michael Yu
+- Sheridan Clayborne
+- Anish Jain
+- Ryan Kelly
+- David Bromberg
+- Shubh
+- Jason Jin
+- Nico Ferrerya
+- Stosh Pomitcher
+- Ariana
+- Nelson
+- Ansh
+- Jose
+- Irene Wu
+- Patrick XFund
+- Reach out to Ryan from 11
+- Reach out to girl who’s friends with the tik tok people
+- Reach out to Josh Richards
+- NFT CEO guy
+- Cory Levy
+- Friends at Sheridan’s house
+-
