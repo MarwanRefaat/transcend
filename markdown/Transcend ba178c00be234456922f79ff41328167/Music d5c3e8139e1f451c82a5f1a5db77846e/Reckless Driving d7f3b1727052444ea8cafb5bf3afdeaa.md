@@ -5,7 +5,7 @@ BPM: 120
 Completion: 80%
 Created: August 18, 2022 8:21 PM
 Key: B Major
-Last edited: August 20, 2022 2:07 PM
+Last edited: August 20, 2022 4:02 PM
 Looking For: Drums, Pianist
 Primary Genre: Singer/Songwriter
 Project Type: Song in Progress
@@ -49,6 +49,8 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 ---
 
 # MASTER:
+
+[https://open.spotify.com/track/1aBeWNv67dayahmq8RK6hc?si=7af2cd8831a64355](https://open.spotify.com/track/1aBeWNv67dayahmq8RK6hc?si=7af2cd8831a64355)
 
 [Malibu master V1.mp3](Reckless%20Driving%20d7f3b1727052444ea8cafb5bf3afdeaa/Malibu_master_V1.mp3)
 
