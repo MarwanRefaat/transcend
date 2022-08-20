@@ -3,7 +3,8 @@
 Artwork: Flying_on_a_Saturday_Artwork.jpeg
 Completion: 80%
 Created: July 27, 2022 4:09 AM
-Last edited: August 19, 2022 10:17 PM
+Good part Start: 1:16
+Last edited: August 20, 2022 2:17 AM
 Primary Genre: Singer/Songwriter
 Project Type: Song in Progress
 Ready for Release: Yes
@@ -37,9 +38,12 @@ Secondary Genre: Pop
 
 # Master
 
-[flying on a saturday - master (untouched).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_-_master_(untouched).mp3)
-
 [flying on a saturday master v1.mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_master_v1.mp3)
+
+- Previous Version
+    
+    [flying on a saturday - master (untouched).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_-_master_(untouched).mp3)
+    
 
 # Instrumental
 
