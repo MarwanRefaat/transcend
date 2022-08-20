@@ -1,7 +1,8 @@
 # The Recipe
 
+Completion: 40%
 Created: August 20, 2022 2:45 AM
-Last edited: August 20, 2022 4:02 AM
+Last edited: August 20, 2022 1:59 PM
 Ready for Release: No
 
 # **GUIDE:**
@@ -103,10 +104,6 @@ first verse (capo 2)
 
 # LYRICS:
 
----
-
-# **SCRATCHPAD:**
-
 Capo 1
 
 VERSE 
@@ -176,3 +173,7 @@ la la da di dum
 la la la 
 
 la di da
+
+---
+
+# **SCRATCHPAD:**
