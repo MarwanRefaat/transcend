@@ -1,6 +1,6 @@
 # Flying on a Saturday
 
-Artwork: ../Untitled%20Database%20bd3ac366ff8444b99fbd1873bc38d63b/Flying_on_a_Saturday_Artwork.jpeg
+Artwork: Flying_on_a_Saturday_Artwork.jpeg
 Completion: 80%
 Created: July 27, 2022 4:09 AM
 Last edited: August 19, 2022 10:17 PM

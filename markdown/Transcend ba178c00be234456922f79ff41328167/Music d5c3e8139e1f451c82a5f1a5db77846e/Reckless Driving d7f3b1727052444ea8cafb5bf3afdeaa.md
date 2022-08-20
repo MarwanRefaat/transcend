@@ -1,6 +1,6 @@
 # Reckless Driving
 
-Artwork: ../Untitled%20Database%20bd3ac366ff8444b99fbd1873bc38d63b/Reckless_Driving_Artwork.png
+Artwork: Reckless_Driving_Artwork.png
 BPM: 120
 Created: August 18, 2022 8:21 PM
 Key: B Major
