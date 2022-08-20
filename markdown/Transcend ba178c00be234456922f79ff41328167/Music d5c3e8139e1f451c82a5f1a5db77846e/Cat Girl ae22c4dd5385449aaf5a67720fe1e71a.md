@@ -2,8 +2,8 @@
 
 Completion: 20%
 Created: August 18, 2022 2:25 PM
-Last edited: August 19, 2022 8:55 PM
-Project Type: Scratch Vocal
+Last edited: August 19, 2022 9:53 PM
+Project Type: Writing Song
 Ready for Release: No
 
 # **GUIDE:**
@@ -44,7 +44,9 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 
 # MASTER:
 
-[https://www.notion.so](https://www.notion.so)
+Scratch Vocal:
+
+[Cat Girl Scratch Vocal by Jonah Steuer.mp3](Cat%20Girl%20ae22c4dd5385449aaf5a67720fe1e71a/Cat_Girl_Scratch_Vocal_by_Jonah_Steuer.mp3)
 
 ## **DAW File**
 

@@ -1,14 +1,45 @@
 # Flying on a Saturday
 
+Artwork: ../Untitled%20Database%20bd3ac366ff8444b99fbd1873bc38d63b/Flying_on_a_Saturday_Artwork.jpeg
 Completion: 80%
 Created: July 27, 2022 4:09 AM
-Last edited: August 19, 2022 7:25 PM
+Last edited: August 19, 2022 10:17 PM
+Primary Genre: Singer/Songwriter
 Project Type: Song in Progress
-Ready for Release: No
+Ready for Release: Yes
+Secondary Genre: Pop
+
+# Artwork Drafts
+
+![Screen Shot 2022-08-19 at 9.30.56 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.30.56_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.31.47 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.31.47_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.32.24 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.32.24_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.35.54 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.35.54_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.37.58 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.37.58_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.40.12 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.40.12_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.43.04 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.43.04_PM.jpeg)
+
+![Screen Shot 2022-08-19 at 9.46.47 PM.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Screen_Shot_2022-08-19_at_9.46.47_PM.jpeg)
+
+![DALL·E 2022-08-19 21.47.27 - small asian girl with long hair centered in the frame flying in a galaxy in a giant acoustic guitar painting style pastel pink and orange color scheme.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/DALLE_2022-08-19_21.47.27_-_small_asian_girl_with_long_hair_centered_in_the_frame_flying_in_a_galaxy_in_a_giant_acoustic_guitar_painting_style_pastel_pink_and_orange_color_scheme.jpeg)
+
+![DALL·E 2022-08-19 21.49.44 - asian girl with long hair left in the frame flying in a galaxy in a giant acoustic guitar painting style pastel pink and orange color scheme.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/DALLE_2022-08-19_21.49.44_-_asian_girl_with_long_hair_left_in_the_frame_flying_in_a_galaxy_in_a_giant_acoustic_guitar_painting_style_pastel_pink_and_orange_color_scheme.jpeg)
+
+![DALL·E 2022-08-19 21.54.42 - galaxy full of floating guitars, keyboards, microphones, drums, basses, anc computers pastel pink, orange, and blue color scheme painting style.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/DALLE_2022-08-19_21.54.42_-_galaxy_full_of_floating_guitars_keyboards_microphones_drums_basses_anc_computers_pastel_pink_orange_and_blue_color_scheme_painting_style.jpeg)
+
+![DALL·E 2022-08-19 21.56.17.jpeg](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/DALLE_2022-08-19_21.56.17.jpeg)
 
 # Master
 
 [flying on a saturday - master (untouched).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_-_master_(untouched).mp3)
+
+[flying on a saturday master v1.mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_master_v1.mp3)
 
 # Instrumental
 
