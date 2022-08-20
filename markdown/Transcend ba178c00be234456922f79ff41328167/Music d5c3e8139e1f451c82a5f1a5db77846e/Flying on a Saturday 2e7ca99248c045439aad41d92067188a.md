@@ -4,7 +4,8 @@ Artwork: Flying_on_a_Saturday_Artwork.jpeg
 Completion: 80%
 Created: July 27, 2022 4:09 AM
 Good part Start: 1:16
-Last edited: August 20, 2022 2:17 AM
+Last edited: August 20, 2022 6:47 PM
+Looking For: Drums, Guitarist, Producer
 Primary Genre: Singer/Songwriter
 Project Type: Song in Progress
 Ready for Release: Yes

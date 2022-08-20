@@ -5,8 +5,8 @@ BPM: 120
 Completion: 80%
 Created: August 18, 2022 8:21 PM
 Key: B Major
-Last edited: August 20, 2022 4:02 PM
-Looking For: Drums, Pianist
+Last edited: August 20, 2022 6:47 PM
+Looking For: Drums, Pianist, Producer
 Primary Genre: Singer/Songwriter
 Project Type: Song in Progress
 Ready for Release: Yes

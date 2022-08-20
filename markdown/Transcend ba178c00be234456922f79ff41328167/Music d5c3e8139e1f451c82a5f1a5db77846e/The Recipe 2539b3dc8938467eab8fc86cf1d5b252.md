@@ -2,7 +2,8 @@
 
 Completion: 40%
 Created: August 20, 2022 2:45 AM
-Last edited: August 20, 2022 1:59 PM
+Last edited: August 20, 2022 6:49 PM
+Looking For: Pianist, Producer
 Ready for Release: No
 
 # **GUIDE:**

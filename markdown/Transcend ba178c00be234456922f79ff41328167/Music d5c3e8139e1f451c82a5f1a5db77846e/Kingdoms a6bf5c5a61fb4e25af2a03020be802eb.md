@@ -3,7 +3,8 @@
 Artwork: Kingdoms_by_Emma_Shen_Artwork.png
 Completion: 60%
 Created: August 12, 2022 1:43 PM
-Last edited: August 20, 2022 2:58 PM
+Last edited: August 20, 2022 6:47 PM
+Looking For: Drums, Guitarist, Pianist, Producer
 Project Type: Unproduced Song
 Ready for Release: No
 
