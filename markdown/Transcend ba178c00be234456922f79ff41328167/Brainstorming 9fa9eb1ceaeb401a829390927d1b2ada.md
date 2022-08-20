@@ -1,4 +1,4 @@
-# Random Ideas
+# Brainstorming
 
 # **Transcend**
 
