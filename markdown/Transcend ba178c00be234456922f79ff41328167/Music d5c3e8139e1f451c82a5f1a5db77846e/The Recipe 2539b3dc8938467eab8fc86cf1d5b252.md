@@ -1,7 +1,7 @@
 # The Recipe
 
 Created: August 20, 2022 2:45 AM
-Last edited: August 20, 2022 3:05 AM
+Last edited: August 20, 2022 4:02 AM
 Ready for Release: No
 
 # **GUIDE:**
@@ -71,6 +71,22 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 
 [https://www.notion.so](https://www.notion.so)
 
+la las (capo 1)
+
+[La las.m4a](The%20Recipe%202539b3dc8938467eab8fc86cf1d5b252/La_las.m4a)
+
+verse and chorus? (capo 1)
+
+[The Recipe verse and chorus.m4a](The%20Recipe%202539b3dc8938467eab8fc86cf1d5b252/The_Recipe_verse_and_chorus.m4a)
+
+next melody (capo 2)
+
+[The recipe chorus melody.m4a](The%20Recipe%202539b3dc8938467eab8fc86cf1d5b252/The_recipe_chorus_melody.m4a)
+
+first verse (capo 2)
+
+[The recipe first couple verses.m4a](The%20Recipe%202539b3dc8938467eab8fc86cf1d5b252/The_recipe_first_couple_verses.m4a)
+
 ## Beat
 
 [https://www.notion.so](https://www.notion.so)
@@ -91,34 +107,72 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 
 # **SCRATCHPAD:**
 
-A teaspoon of sweetness
+Capo 1
 
-A few cups of bliss
+VERSE 
 
-A minced pound of handsome
+A (G) teaspoon of sweetness
 
-Mixed in with a kiss
+A (Am7) few cups of bliss
 
-A big scoop of humor
+A (D7) minced pound of handsome
 
-Intelligence too
+(G) Mixed in with a kiss
 
-This recipe makes for
+A (G) big scoop of humor
 
-A serving of you
+(Am7) Intelligence too
 
-It may not be perfect
+(D7) This recipe makes for
 
-But with every try 
+(G) A serving of you
 
-It’s better and better
+It (G) may not be perfect
 
-Soon measured by eye
+But (Am7) with every try 
 
-And on every page
+It’s (D7) better and better
 
-Peeking out right above 
+Soon (G) measured by eye
 
-You’ll see that I’ve bookmarked
+And (G) on every page
 
-The things that I love
+Peeking (Am7) out right above 
+
+You’ll (D7) see that I’ve bookmarked
+
+The (G) things that I love
+
+CHORUS 
+
+Can you tell me 
+
+What makes you good
+
+A secret ingredient 
+
+Tell me you should
+
+It’s not in the 
+
+Recipe alright
+
+Cause no one else makes it
+
+Just quite right
+
+La la la
+
+la la da di dum
+
+la la la 
+
+la la da di di 
+
+La la la
+
+la la da di dum
+
+la la la 
+
+la di da
