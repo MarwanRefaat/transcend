@@ -3,7 +3,7 @@
 BPM: 140
 Created: August 19, 2022 7:49 PM
 Key: B Major
-Last edited: August 19, 2022 7:50 PM
+Last edited: August 19, 2022 8:54 PM
 Looking For: Female Vocalist, Lyricist, Male Vocalist
 Project Type: Guitar Chords
 Ready for Release: No
@@ -61,6 +61,12 @@ These are “soft” constraints to guide creativity but virtually no top 10 son
 ---
 
 # STEMS:
+
+# Master
+
+## Scratch
+
+[guitar chords scratch vocal.mp3](Guitar%20Chords%20a81ce52a9f1d4dfd83242d19abefec14/guitar_chords_scratch_vocal.mp3)
 
 ## Vocals
 

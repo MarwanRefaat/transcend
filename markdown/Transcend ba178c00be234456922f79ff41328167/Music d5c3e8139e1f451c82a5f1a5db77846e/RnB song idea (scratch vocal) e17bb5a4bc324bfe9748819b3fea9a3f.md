@@ -3,7 +3,8 @@
 BPM: 153
 Created: August 16, 2022 12:16 AM
 Key: C♯ Major
-Last edited: August 16, 2022 12:19 AM
+Last edited: August 19, 2022 9:32 PM
+Project Type: Writing Song
 Ready for Release: No
 
 # **GUIDE:**
