@@ -2,10 +2,9 @@
 
 Completion: 80%
 Created: July 27, 2022 4:09 AM
-Last edited: August 19, 2022 7:02 PM
+Last edited: August 19, 2022 7:25 PM
 Project Type: Song in Progress
 Ready for Release: No
-Track Price: 0.99
 
 # Master
 
@@ -15,7 +14,11 @@ Track Price: 0.99
 
 [Flying on a Saturday by Emma Shen (Instrumental).mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/Flying_on_a_Saturday_by_Emma_Shen_(Instrumental).mp3)
 
-# Tracks
+Beat V2
+
+[flying on a saturday - beat.mp3](Flying%20on%20a%20Saturday%202e7ca99248c045439aad41d92067188a/flying_on_a_saturday_-_beat.mp3)
+
+Tracks
 
 - Vocals
     

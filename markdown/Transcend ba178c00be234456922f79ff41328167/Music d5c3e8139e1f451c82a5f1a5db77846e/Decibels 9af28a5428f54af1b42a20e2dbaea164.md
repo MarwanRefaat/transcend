@@ -2,7 +2,9 @@
 
 Completion: 20%
 Created: August 10, 2022 12:18 AM
-Last edited: August 10, 2022 11:45 AM
+Last edited: August 19, 2022 7:14 PM
+Looking For: Female Vocalist, Male Vocalist
+Project Type: Beat
 Ready for Release: No
 
 # **GUIDE:**

@@ -1,7 +1,9 @@
 # More than Friends with Benefits
 
 Created: August 10, 2022 12:25 AM
-Last edited: August 10, 2022 11:45 AM
+Last edited: August 19, 2022 7:30 PM
+Looking For: Female Vocalist, Lyricist, Male Vocalist
+Project Type: Beat
 Ready for Release: No
 
 # **GUIDE:**

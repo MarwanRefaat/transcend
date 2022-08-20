@@ -4,7 +4,8 @@ BPM: 102
 Completion: 20%
 Created: August 9, 2022 11:52 PM
 Key: F Major
-Last edited: August 10, 2022 11:45 AM
+Last edited: August 19, 2022 7:16 PM
+Project Type: Beat
 Ready for Release: No
 
 # **GUIDE:**

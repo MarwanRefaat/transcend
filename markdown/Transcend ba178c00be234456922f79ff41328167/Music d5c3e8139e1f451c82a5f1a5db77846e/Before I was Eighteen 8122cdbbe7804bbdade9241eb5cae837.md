@@ -3,7 +3,9 @@
 BPM: 87
 Completion: 20%
 Created: August 18, 2022 2:22 PM
-Last edited: August 18, 2022 5:53 PM
+Last edited: August 19, 2022 7:22 PM
+Looking For: Lyricist
+Project Type: Writing Song
 Ready for Release: No
 
 # **GUIDE:**

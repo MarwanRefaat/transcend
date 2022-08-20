@@ -1,7 +1,8 @@
 # Money Printer Out of Ink
 
 Created: August 10, 2022 12:36 AM
-Last edited: August 10, 2022 11:46 AM
+Last edited: August 19, 2022 7:31 PM
+Project Type: Writing Song
 Ready for Release: No
 
 # **GUIDE:**

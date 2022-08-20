@@ -4,7 +4,9 @@ BPM: 66
 Completion: 40%
 Created: August 9, 2022 5:09 PM
 Key: G Minor
-Last edited: August 10, 2022 11:45 AM
+Last edited: August 19, 2022 7:13 PM
+Looking For: Lyricist, Producer
+Project Type: Scratch Vocal
 Ready for Release: No
 
 # Master
