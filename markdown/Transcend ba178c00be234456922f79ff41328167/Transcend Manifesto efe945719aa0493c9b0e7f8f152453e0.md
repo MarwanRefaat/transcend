@@ -36,6 +36,6 @@ For now we’re bootstrapping a rough version of the product by combining the [N
 
 - Contribute to projects quickly with automatic environment setup.
 - Make sure you see the changes you care about.
-- Build community around your code
+- Build community around your music
 
-### Codespaces
+### Soundspaces

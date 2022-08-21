@@ -2,4 +2,4 @@
 
 Assigned To: jonah steuer
 Category: Outreach
-Status: 20%
+Status: 40%
